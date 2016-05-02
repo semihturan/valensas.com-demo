@@ -73,6 +73,10 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   &:active {
     background: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.5);
   }
+  &:hover{
+      color:white;
+      border-color: white;
+  }
   font-size: 21px;
   // padding: 12px 18px;
 }
@@ -93,9 +97,7 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
-  a{
-    color:#fff;
-  }
+  color:#fff;
 }
 .footer .lead {
   margin-top: 20px;
@@ -238,6 +240,29 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
 }
 
 
+blockquote {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  border-left: none;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+.start-quote {
+  font-size: 200%;
+  color: #CECECE;
+  float:left;
+}
+.end-quote {
+  font-size: 200%;
+  color: #CECECE;
+  float: right;
+}
+
 /* circles */
 /**
  * Circles
@@ -251,23 +276,6 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
-  }
-
-  blockquote {
-    font-size: 30px;
-    font-weight: 500;
-    font-style: normal;
-    text-align: center;
-    border-left: none;
-
-    .start-quote {
-      font-size: 200%;
-      color: #CECECE;
-    }
-    .end-quote {
-      font-size: 200%;
-      color: #CECECE;
-    }
   }
 }
 
@@ -316,6 +324,24 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   }
   .title-bar-title {
     float:left;
+  }
+}
+
+.dropdown{
+  text-align: right;
+  display: block;
+  a{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1128px) {
+  .dropdown {
+    text-align:center;
+    display: block;
+    a{
+      font-size: 14px;
+    }
   }
 }
 

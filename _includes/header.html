@@ -1,15 +1,19 @@
 <header style="background-color:#fff;">
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <div data-sticky-container>
+  <div class="title-bar hide-for-medium" data-sticky data-options="marginTop:0;" style="width:100%">
     <div class="title-bar-title">
       <a href="{{site.baseurl }}/" ><img src="{{site.baseurl }}/images/valensas.png" style="height:20px;" alt=""></a>
     </div>
-    <button class="menu-icon dark" type="button" data-toggle></button>
+    <div class="title-bar-right">
+      <button class="menu-icon dark" type="button" data-open="topBar"></button>
+    </div>
+    <!-- <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button> -->
   </div>
-  <div class="column row" style="vertical-align: middle;">
-    <div class="large-6 medium-3 columns hide-for-small-only">
+  <div class="column row hide-for-small-only" style="vertical-align: middle;">
+    <div class="large-5 medium-3 columns">
       <a href="{{site.baseurl }}/" ><img src="{{site.baseurl }}/images/valensas.png" alt=""></a>
     </div>
-    <div class="large-6 medium-9 small-12 columns top-bar" id="example-menu" style="display: block; background-color:#fff;">
+    <div class="large-7 medium-9 small-12 columns top-bar" id="topBar" style="background-color:#fff;">
       <div class="top-bar-right">
         <ul class="dropdown menu" style="background-color:#fff;" data-dropdown-menu>
           {% for my_page in site.pages %}
@@ -21,4 +25,5 @@
       </div>
     </div>
   </div>
+</div>
 </header>

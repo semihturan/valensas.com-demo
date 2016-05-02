@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Client Projects
-permalink: /client/
+title: Projects
+permalink: /projects/
 ---
 
 Valensas was established in ...

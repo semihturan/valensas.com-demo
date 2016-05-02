@@ -13,8 +13,8 @@ baseurl: "/valensas.com-demo" # the subpath of your site, e.g. /blog
 url: "http://www.semihturan.xyz" # the base hostname & protocol for your site
 twitter_username: twitter.com/valensas
 facebook_username:  facebook.com/valensas
-host: 0.0.0.0
-port: 8080
+# host: 0.0.0.0
+# port: 8080
 # Build settings
 markdown: kramdown
 sass:
