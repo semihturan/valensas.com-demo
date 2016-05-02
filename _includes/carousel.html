@@ -1,0 +1,41 @@
+<section class="fullpage">
+  <div id="product-line-carousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      {% for product in site.data.products %}
+      {% assign imgIndex = {{forloop.index0}} %}
+        {% if forloop.first %}
+          <li data-target="#product-line-carousel" data-slide-to="{{ imgIndex }}" class="active"></li>
+        {% else %}
+          <li data-target="#product-line-carousel" data-slide-to="{{ imgIndex }}"></li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner carousel-img" role="listbox">
+      {% for product in site.data.products %}
+        {% if forloop.first %}
+          <div class="item active">
+            <img src="../images/{{ product.img }}">
+            <div class="carousel-caption">
+              <h1>{{product.title}}</h1>
+              <h3 class="show-for-medium">{{product.description}}</h3>
+              <a class="hollow button" href="#">Learn more about {{product.title}}</a>
+            </div>
+          </div>
+        {% else %}
+          <div class="item">
+            <img src="../images/{{ product.img }}">
+            <div class="carousel-caption">
+              <h1>{{product.title}}</h1>
+              <h3 class="hide-for-small-only">{{product.description}}</h3>
+              <a class="hollow button" href="#">Learn more about {{product.title}}</a>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

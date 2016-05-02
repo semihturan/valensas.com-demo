@@ -1,0 +1,21 @@
+---
+layout: indexpage
+---
+
+<div class="home">
+
+  <h1>Posts</h1>
+  {% for category in site.categories %}
+    {% if category == "veacon" %}
+      <ul class="post-list">
+        {% for posts in category %}
+          {% for post in posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  <p>Set</p>
+
+
+</div>
