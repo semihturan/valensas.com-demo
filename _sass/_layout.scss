@@ -294,7 +294,7 @@ blockquote {
 
 .clearfix .info {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #95a5a6;
   margin-top: 10px;
   margin-right: 20px;
@@ -306,8 +306,8 @@ blockquote {
 
 .clearfix .title {
   color: #999999;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 24px;
 }
 
 .title-bar{
@@ -347,4 +347,96 @@ blockquote {
 
 .box {
   padding-top: 20px;
+}
+
+////////////////////////
+///
+//
+
+.orbit-container{
+  background-color: #EDF1F1;
+  h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color:#2F6BC1;
+    padding-top: 30px;
+  }
+}
+
+.orbit-content {
+  height: 200px;
+  width: auto;
+  padding-top: 30%;
+  text-align:right;
+  align-content: center;
+  vertical-align: middle;
+  h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #33495D;
+  }
+  p{
+    font-size: 14px;
+    font-weight:300;
+    color: #7B8997;
+  }
+}
+
+.orbit-previous, .orbit-next {
+  color: #000;
+}
+
+.orbit-previous {
+  left: auto;
+  padding-right: 0; }
+
+.orbit-next {
+  padding-left:0; }
+
+.orbit-slide {
+  width: 100%;
+  max-height: 50%;
+}
+
+.orbit-slide.no-motionui.is-active{
+  top: 0;
+  left: 0;
+}
+
+.orbit-bullets {
+  position: relative;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  text-align: right;
+}
+
+.orbit-bullets button {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin: 0.1rem;
+  background-color: #7B8997;
+  border-radius: 50%;
+}
+.orbit-bullets button:hover {
+  background-color: #fff;
+}
+.orbit-bullets button.is-active {
+  background-color: #fff;
+}
+
+
+@media (max-width: 767px) {
+  .orbit-content {
+  text-align:center;
+  padding-top: 0%;
+  }
+  .orbit-container{
+    // min-height: 550px;
+    overflow:visible;
+  }
+
+  .orbit-bullets {
+    text-align: center;
+  }
 }
