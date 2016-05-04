@@ -18,20 +18,22 @@
       {% for product in site.data.products %}
         {% if forloop.first %}
           <div class="item active">
-            <img src="{{site.baseurl }}/images/{{ product.img }}">
+            <img src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
+            <a class="show-for-small-only" href="http://www.google.com"><img src="{{site.baseurl }}/images/{{ product.img }}"></a>
             <div class="carousel-caption">
               <h1>{{product.title}}</h1>
               <h3 class="show-for-medium">{{product.description}}</h3>
-              <a class="hollow button" href="#">Learn more about {{product.title}}</a>
+              <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
             </div>
           </div>
         {% else %}
           <div class="item">
-            <img src="{{site.baseurl }}/images/{{ product.img }}">
+            <img src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
+            <a class="show-for-small-only" href="http://www.google.com"><img src="{{site.baseurl }}/images/{{ product.img }}"></a>
             <div class="carousel-caption">
               <h1>{{product.title}}</h1>
-              <h3 class="hide-for-small-only">{{product.description}}</h3>
-              <a class="hollow button" href="#">Learn more about {{product.title}}</a>
+              <h3 class="show-for-medium">{{product.description}}</h3>
+              <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
             </div>
           </div>
         {% endif %}

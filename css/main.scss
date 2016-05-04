@@ -8,22 +8,29 @@
 
 
 // Our variables
-$base-font-family: "Roboto-Light", Helvetica, Arial, sans-serif;
-$base-font-size:   18px;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$small-font-size:   14px;
+$medium-font-size:   20px;
+$large-font-size:   24px;
+$base-font-size:   16px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #555555;
-$background-color: #efefef;
+$background-color: #fff;
 $brand-color:      #003C6E;
+$footer-color: rgb(49, 67, 97);
+$header-color: #fff;
 
-$grey-color:       #828282;
-$white-color:       #FFF;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$blue-color: #2F6BC1;
+$white-color:       #fff;
+$grey-color:       #697783;
+$grey-color-ultralight: #EDF1F1;
+$grey-color-light: #95A5A5;
+$grey-color-dark:  #33495D;
+$jobs-color: #FF7979;
 
 // Width of the content area
 $content-width:    800px;
@@ -44,6 +51,12 @@ $on-laptop:        800px;
         @content;
     }
 }
+
+@draw-border  {
+  > div > div , > div {
+    border-style: solid;border-width:2px;border-color:#fff;
+  }
+};
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
