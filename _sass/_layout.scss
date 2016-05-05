@@ -2,6 +2,10 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   font-family: $base-font-family;
 }
 
+body{
+  background-color: $white-color;
+}
+
 // Top Bar
 
 .top-bar-custom-container {
@@ -11,9 +15,15 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   }
 }
 
-.banner-logo-large {
-  // vertical-align: middle;
-  padding-top: 8px;
+.header-logo-large {
+  margin-top: -24px;
+  height:100px;
+  content: $logo-header;
+}
+
+.header-logo-small {
+  height:40px;
+  content: $logo-header;
 }
 
 .sticky-navigation {
@@ -255,10 +265,16 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
 
 .orbit-previous {
   left: auto;
-  padding-right: 0; }
+  padding-right: 0;
+  background-image: $arrow-black-left;
+  background-repeat: no-repeat;
+}
 
 .orbit-next {
-  padding-left:0; }
+  padding-left:0;
+  background-image: $arrow-black-right;
+  background-repeat: no-repeat;
+}
 
 .orbit-slide {
   width: 100%;
@@ -442,14 +458,9 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   }
 }
 
-// Footer
-.footer {
-  background-color: $footer-color;
-  padding-top: 3.5em;
-  padding-bottom: 2em;
-  font-size: $base-font-size;
-}
-.jobs {
+// Jobs
+
+.jobs-section {
   padding-top: 2em;
   padding-bottom: 2em;
   background-color:$jobs-color;
@@ -457,17 +468,33 @@ h1,h2,h3,h4,h5,h6,a,ul,li {
   text-align: center;
   text-transform: uppercase;
   color:$white-color;
+  cursor: pointer;
 }
-.footer .lead {
-  margin-top: 1.5em;
-  font-size: $small-font-size;
-  color: $grey-color-light;
+
+// Footer
+.footer-section {
+  background-color: $footer-color;
+  padding-top: 3.5em;
+  padding-bottom: 2em;
+  font-size: $base-font-size;
 }
-.footer .lead b {
+
+.footer-logo {
+  margin-top: -16px;
+  height:60px;
+  content: $logo-footer;
+}
+
+.footer-description-title {
+  padding-top: 0.3em;
   font-size: $large-font-size;
-  font-weight: 500;
   color: $white-color;
 }
+.footer-description {
+  font-size: $base-font-size;
+  color: $grey-color-light;
+}
+
 .footer a:hover,.footer a:focus,.footer a.active {
  color: $white-color;
 }
