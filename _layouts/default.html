@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body style="background-color:#fff">
+  <body>
     {% include header.html %}
-    <div>
-      {{ content }}
-    </div>
+    <section class="fullpage">  </section>
+    <section style="padding: 2em 0 2em 0; height: 100em;">
+      <div>
+        {{ content }}
+      </div>
+    </section>
     {% include footer.html %}
     {% include scripts.html %}
   </body>

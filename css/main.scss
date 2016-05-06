@@ -3,8 +3,9 @@
 ---
 @charset "utf-8";
 // import bootstrap
-@import "bootstrap";
+// @import "bootstrap";
 @import"foundation";
+@import"flickity";
 
 
 // Our variables
@@ -13,6 +14,7 @@ $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $small-font-size:   14px;
 $medium-font-size:   20px;
 $large-font-size:   24px;
+$giant-font-size: 50px;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $base-line-height: 1.5;
@@ -39,6 +41,8 @@ $arrow-black-left: url("/images/arrow-black-l.svg");
 $arrow-black-right: url("/images/arrow-black-r.svg");
 $arrow-white-left: url("/images/arrow-white-l.svg");
 $arrow-white-right: url("/images/arrow-white-r.svg");
+$apostrophe-left: url("/images/apostrophe-l.svg");
+$apostrophe-right: url("/images/apostrophe-r.svg");
 
 // Width of the content area
 $content-width:    800px;

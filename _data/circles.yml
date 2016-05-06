@@ -1,11 +1,14 @@
 - title: Mobile App Development
+  page: mobile.html
   img: mobile-dev.png
   description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 
 - title: [RESERVED]
+  page: reserved.html
   img: reserved.png
   description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 
 - title: Consulting
+  page: consulting.html
   img: consulting.png
   description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
