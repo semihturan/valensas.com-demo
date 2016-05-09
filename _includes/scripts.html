@@ -16,7 +16,7 @@ jQuery(document).on("mobileinit", function() {
 
 <script>
 $('#hidereveal').click(function() {
-     $('#custom-hamburger').toggle('show');
+     $('#custom-hamburger').slideToggle('slow');
 });
 </script>
 
@@ -27,6 +27,6 @@ $('#hidereveal').click(function() {
 $('.main-gallery').flickity({
   // options
   cellAlign: 'left',
-  contain: true,
+  contain: true
 });
 </script>

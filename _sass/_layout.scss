@@ -69,10 +69,23 @@ body{
   position: fixed;
   z-index: 9999;
   max-height:420px;
-  right: -1.2em;
-  background-color:rgba(red($grey-color-ultralight), green($grey-color-ultralight), blue($grey-color-ultralight), 0.9);
+  width: 100%;
+  // right: -1.2em;
+  background-color:rgba(255,255,255, 0.9);
   a{
+    color:$grey-color-dark;
+  }
+
+  a:hover{
     color:$blue-color;
+  }
+
+  .hr-line {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+    padding: 0;
   }
 }
 
@@ -117,14 +130,17 @@ body{
 
 .carousel-section {
   background-repeat: no-repeat;
+  max-height: 550px;
 }
 
 .gallery-cell {
+
   width: 100%;
   max-height: 550px;
   margin-right: 10px;
 
   .carousel-content {
+    overflow: hidden;
     width: 100%;
     position: absolute;
     // top: 0%;
@@ -135,9 +151,29 @@ body{
     font-size: $large-font-size;
     color: $white-color;
 
-    @include media-query($on-palm) {
-        text-align: center;
+    @include media-query($on-laptop) {
+        max-height: 400px;
     }
+  }
+
+  .carousel-background {
+    width:100%;
+    // max-height: 550px;
+      background-size: cover;
+  }
+
+  @include media-query($on-palm) {
+    max-height: 440px;
+    .carousel-content {
+      text-align: center;
+      transform: translateY(5%);
+    }
+    .carousel-background {
+      // max-height: 440px;
+    }
+    // .carousel-gradient-background {
+    // height: 360px;
+    // }
   }
 
   h1 {
@@ -208,14 +244,14 @@ body{
 }
 
 .start-quote {
-  background: url("/images/apostrophe-l.svg");
+  background: $apostrophe-left;
   background-repeat: no-repeat;
   float:left;
   height: 1em;
   width: 1em;
 }
 .end-quote {
-  background: url("/images/apostrophe-r.svg");
+  background: $apostrophe-right;
   background-repeat: no-repeat;
   float: right;
   height: 1em;
@@ -272,102 +308,59 @@ body{
 
 .casestudies-section {
   padding-top: 2em;
-  background-color: $grey-color-ultralight;
-}
+  background-repeat: no-repeat;
 
-.casestudies-section   h1{
-    text-align: center;
-    font-size: $giant-font-size;
-    font-weight: lighter;
+  .section-header {
+    background: $grey-color-ultralight;
+  }
+
+  .carousel-content {
+    position: relative;
+    transform: translateY(0);
+    max-height: 390px;
+    @include media-query($on-palm) {
+      max-height: 420px;
+    }
+  }
+
+  h1 {
+      font-size: $giant-font-size;
+      font-weight: lighter;
+      color:$blue-color;
+      text-align: center;
+      padding-bottom: 2em;
+      @include media-query($on-palm) {
+        padding-bottom: 0;
+      }
+  }
+
+  h2 {
+    font-size: $large-font-size;
     color:$blue-color;
+  }
+
+  h3{
+    font-size: $base-font-size;
+    font-weight: 300;
+    color:$grey-color-dark;
+  }
+
+  .carousel-gradient-background {
+    background: -moz-linear-gradient(top, $grey-color-ultralight 0%, rgba(red($grey-color-ultralight), green($grey-color-ultralight), blue($grey-color-ultralight), 0.5) 60%, rgb(255, 255, 255) 100%);
+    background: -webkit-linear-gradient(top, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(to bottom, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
+    width:100%;
+    height: 390px;
+    @include media-query($on-palm) {
+        height: 390px;
+    }
+  }
 }
 
-.orbit-section{
-  padding-top: 30px;
-
-  .orbit-content {
-    height: 200px;
-    width: auto;
-    padding-top: 30%;
-    text-align:right;
-    align-content: center;
-    vertical-align: middle;
-    h3{
-      font-weight: bold;
-      font-size: $large-font-size;
-      color: #33495D;
-    }
-    p{
-      font-size: $small-font-size;
-      font-weight:300;
-      color: #7B8997;
-    }
-
-    .orbit-previous, .orbit-next {
-      color: #000;
-    }
-
-    .orbit-previous {
-      left: auto;
-      padding-right: 0;
-      background-image: $arrow-black-left;
-      background-repeat: no-repeat;
-    }
-
-    .orbit-next {
-      padding-left:0;
-      background-image: $arrow-black-right;
-      background-repeat: no-repeat;
-    }
-
-    .orbit-slide {
-      width: 100%;
-      // max-height: 50%;
-    }
-
-    .orbit-slide.no-motionui.is-active{
-      top: 0;
-      left: 0;
-    }
-
-    .orbit-bullets {
-      position: relative;
-      margin-top: 0.8rem;
-      margin-bottom: 0.8rem;
-      text-align: right;
-    }
-
-    .orbit-bullets button {
-      width: 0.6rem;
-      height: 0.6rem;
-      margin: 0.1rem;
-      background-color: #7B8997;
-      border-radius: 50%;
-    }
-
-    .orbit-bullets button:hover {
-      background-color: $white-color;
-    }
-
-    .orbit-bullets button.is-active {
-      background-color: $white-color;
-    }
-
-    @media (max-width: 767px) {
-      .orbit-content {
-      text-align:center;
-      padding-top: 0%;
-      }
-
-      .orbit-container{
-        // min-height: 550px;
-        overflow:visible;
-      }
-
-      .orbit-bullets {
-        text-align: center;
-      }
-    }
+.mobile-screen-img {
+  float: left;
+  @include media-query($on-palm) {
+    float: none;
   }
 }
 
@@ -664,4 +657,36 @@ body{
       padding: 15px;
       border: 1px solid red;
   }
+}
+
+
+
+
+
+
+
+/* ---- Flickity carousel custom settings ---- */
+
+.flickity-prev-next-button {
+  top: 40%;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: none;
+}
+
+.flickity-prev-next-button:hover {
+  background: none;
+  path {
+    fill: $blue-color;
+  }
+}
+
+
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  background: $grey-color-light;
+  border-radius: 50%;
+  opacity: 0.25;
 }

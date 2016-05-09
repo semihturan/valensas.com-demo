@@ -18,6 +18,7 @@
           {% for my_page in site.pages %}
             {% if my_page.title %}
               <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+              <hr class="hr-line"/>
             {% endif %}
           {% endfor %}
         </ul>

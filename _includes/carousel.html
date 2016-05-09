@@ -6,16 +6,16 @@
     {% for product in site.data.products %}
     <div class="gallery-cell row expanded">
       <div class="carousel-content">
-        <div class="small-4 medium-6 large-4 small-centered medium-uncentered large-uncentered columns">
+        <div class="small-8 medium-6 large-6 small-centered medium-uncentered large-uncentered columns">
           <img src="{{site.baseurl }}/images/{{ product.title }}.png" alt="{{ product.title }}">
         </div>
-        <div class="small-12 medium-6 large-7 small-centered medium-uncentered  large-uncentered columns end">
+        <div class="small-12 medium-5 large-4 small-centered medium-uncentered  large-uncentered columns end">
             <h1>{{product.title}}</h1>
             <h3 class="show-for-medium">{{product.description}}</h3>
             <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
         </div>
       </div>
-      <img src="{{site.baseurl }}/images/{{ product.img }}" alt="{{ product.title }}">
+      <img class="carousel-background" src="{{site.baseurl }}/images/{{ product.img }}" alt="{{ product.title }}">
       <!-- <a class="show-for-small-only" href="#"><img src="{{site.baseurl }}/images/{{ product.img }}" alt="{{ product.title }}"></a> -->
     </div>
     {% endfor %}

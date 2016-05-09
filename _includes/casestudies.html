@@ -1,46 +1,22 @@
 <section class="casestudies-section">
-  <div class="row expanded">
+  <div class="row expanded section-header">
     <div class="large-12 columns">
       <h1>Case Studies</h1>
     </div>
   </div>
-  <div class="orbit" role="region" aria-label="Case Studies" data-orbit>
-    <ul class="orbit-container">
-      <div class="large-2 columns show-for-large">
-        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span></button>
+  <div class="gallery js-flickity carousel-gradient-background" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": true,"arrowShape": "M54.1,99.2L56.3,97.2L10.2,51C9.8,50.3 9.8,49.7 10.2,49L56.4,2.8L54.2,0.8C53.8,0.1 52.9,0.1 52.4,0.8L3.9,49C3.5,49.7 3.5,50.3 3.9,51L52.3,99.2C52.8,99.9 53.7,99.9 54.1,99.2L54.1,99.2z"}'>
+    {% for casestudy in site.data.casestudies %}
+    <div class="gallery-cell row expanded">
+      <div class="carousel-content">
+        <div class="small-12 medium-5 large-4  small-centered medium-uncentered  large-offset-2 columns">
+            <h2>{{casestudy.title}}</h2>
+            <h3 class="show-for-medium">{{casestudy.description}}</h3>
+        </div>
+        <div class="small-8 medium-6 large-4 small-offset-2 medium-uncentered large-uncentered columns end">
+          <img class="mobile-screen-img" src="{{site.baseurl }}/images/{{ casestudy.img }}" alt="{{ casestudy.title }}">
+        </div>
       </div>
-      <div class="large-2 columns show-for-large">
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span></button>
-      </div>
-
-      {% for casestudy in site.data.casestudies %}
-        <li class="is-active orbit-slide">
-          <div class="row">
-            <div class="large-4 large-offset-2 medium-6 medium-offset-0 small-8 small-offset-2 columns">
-              <div class="orbit-content">
-                <h3>{{casestudy.title}}</h3>
-                <p>
-                  {{casestudy.description}}
-                </p>
-                <nav class="orbit-bullets">
-                  {% for casestudy in site.data.casestudies %}
-                  {% assign imgIndex = {{forloop.index0}} %}
-                    {% if forloop.first %}
-                    <button class="is-active" data-slide="{{ imgIndex }}"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-                    {% else %}
-                    <button data-slide="{{ imgIndex }}"><span class="show-for-sr">Third slide details.</span></button>
-                    {% endif %}
-                  {% endfor %}
-                </nav>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-12 columns end">
-              <img class="orbit-image" src="{{site.baseurl }}/images/{{casestudy.img}}" alt="Space">
-            </div>
-          </div>
-          <!-- <figcaption class="orbit-caption">Space, the final frontier.</figcaption> -->
-        </li>
-      {% endfor %}
-    </ul>
+    </div>
+    {% endfor %}
   </div>
 </section>
