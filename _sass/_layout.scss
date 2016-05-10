@@ -6,6 +6,20 @@ body{
   background-color: $white-color;
 }
 
+h3 {
+  font-size: $large-font-size;
+  color: $grey-color-dark;
+}
+
+h6 {
+  font-size: $medium-font-size;
+  color: $grey-color-dark;
+}
+
+p {
+    font-size: $small-font-size;
+    color: $grey-color-light;
+}
 
 // Fullpage for adjusting top-bar
 
@@ -195,7 +209,7 @@ body{
       width:40em;
   }
 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $base-font-family;
     .page-link {
       color: $grey-color-dark;
       &:hover{
@@ -229,13 +243,6 @@ body{
   padding: 4em 0 2em 0;
 }
 
-.quote-content {
-  font-size: 30px;
-  font-weight: 300;
-  text-align: center;
-  color:$grey-color;
-}
-
 .start-quote {
   background: $apostrophe-left;
   background-repeat: no-repeat;
@@ -256,13 +263,6 @@ body{
 .circles-section {
   padding: 2em 0 2em 0;
   content-align: center;
-
-  h1{
-    text-align: center;
-    font-size: $giant-font-size;
-    font-weight: lighter;
-    color:$blue-color;
-  }
 }
 
 .circles .photo {
@@ -300,7 +300,6 @@ body{
 // Case Studies
 
 .casestudies-section {
-  padding-top: 2em;
   background-repeat: no-repeat;
 
   .section-header {
@@ -316,26 +315,8 @@ body{
     }
   }
 
-  h1 {
-      font-size: $giant-font-size;
-      font-weight: lighter;
-      color:$blue-color;
-      text-align: center;
-      padding-bottom: 2em;
-      @include media-query($on-palm) {
-        padding-bottom: 0;
-      }
-  }
-
-  h2 {
-    font-size: $large-font-size;
+  h3 {
     color:$blue-color;
-  }
-
-  h3{
-    font-size: $base-font-size;
-    font-weight: 300;
-    color:$grey-color-dark;
   }
 
   .carousel-gradient-background {
@@ -694,7 +675,7 @@ body{
     color:$white-color;
     font-weight: 600;
     text-align: right;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
   }
 
   h2 {
@@ -703,7 +684,7 @@ body{
     color:$white-color;
     font-weight: 500;
     text-align: right;
-    // padding-bottom: 1em;
+    padding-bottom: 1em;
   }
 
   h3 {
@@ -730,5 +711,183 @@ body{
     .content {
       padding-top:0em;
     }
+  }
+}
+
+.product1-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+      text-align: center;
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: right;
+    padding: 2em 0 2em 0;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+    max-height: 550px;
+    img {
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .content-wrapper {
+      display:flex;
+      flex-flow: column;
+      padding-top: 2em;
+    }
+    .informative-wrapper {
+      padding: 3em 3em 0 3em;
+      order:2;
+    }
+    .informative{
+      text-align: center;
+      padding: 2em 0 0 0;
+    }
+    .gallery-wrapper {
+      order:1;
+      max-height: 400px;
+      img {
+        padding: 0.8em;
+        height: 40%;
+        width: 40%;
+      }
+    }
+    .gallery-cell {
+      bottom: 1em;
+    }
+  }
+}
+
+
+.product2-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+      text-align: center;
+  }
+
+  .paragraph-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: left;
+    padding: 2em 0 2em 0;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+    max-height: 550px;
+  }
+
+  @include media-query($on-palm) {
+    .content-wrapper {
+      display:flex;
+      flex-flow: column;
+      padding-top: 2em;
+    }
+    .paragraph-wrapper {
+      order:2;
+      padding: 3em 3em 0 3em;
+    }
+    .informative-wrapper {
+      padding: 0 3em;
+      order:3;
+    }
+    .informative{
+      text-align: center;
+      padding: 2em 0 0 0;
+    }
+    .gallery-wrapper {
+      text-align: center;
+      order:1;
+      max-height: 400px;
+      img {
+        padding: 0.8em;
+        // height: 40%;
+        // width: 40%;
+      }
+    }
+    .gallery-cell {
+      bottom: 1em;
+    }
+  }
+}
+
+.product3-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+    text-align: right;
+    img{
+      max-height: 200px;
+    }
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: left;
+    padding: 2em 0 2em 0;
+  }
+
+  @include media-query($on-palm) {
+    .informative-wrapper {
+      padding: 0 3em;
+    }
+    .informative{
+      text-align: center;
+      padding: 2em 0;
+      display:flex;
+      flex-flow: column;
+    }
+    .list-icon {
+      text-align: center;
+      order:1;
+    }
+    .descriptive {
+      order: 2;
+    }
+  }
+}
+
+
+
+
+// Common Elements
+
+.section-title {
+  font-size: $giant-font-size;
+  font-weight: lighter;
+  color:$blue-color;
+  text-align: center;
+}
+
+.quote-content {
+  text-align: center;
+  padding: 2em 0;
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color:$grey-color;
   }
 }

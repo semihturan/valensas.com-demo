@@ -1,0 +1,56 @@
+<hr />
+
+<section class="product2-section">
+  {% for product in site.data.ourproducts %}
+    {% if forloop.index == 2 %}
+  <div class="row">
+    <div class="large-12 large-centered columns quote-content">
+      <h1 class="section-title">{{product.title}}</h1>
+      <h2>{{product.description}}</h2>
+    </div>
+  </div>
+
+  <div class="row content-wrapper">
+
+    <div class="small-12 medium-6 columns paragraph-wrapper">
+      <h3>{{product.subtitle}}</h1>
+      <p>{{product.paragraph-1}}</p>
+      <p>{{product.paragraph-2}}</p>
+    </div>
+
+    <div class="small-12 medium-6 columns gallery-wrapper">
+      <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
+        <div class="gallery-cell">
+          <img src="{{site.baseurl }}/images/{{product.img-1}}" alt="">
+        </div>
+        <div class="gallery-cell">
+          <img src="{{site.baseurl }}/images/{{product.img-2}}" alt="">
+        </div>
+        <div class="gallery-cell">
+          <img src="{{site.baseurl }}/images/{{product.img-3}}" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 columns informative-wrapper">
+
+        <div class="small-12 medium-4 columns informative">
+          <h6>{{product.list-1-title}}</h6>
+          <p>{{product.list-1-description}}</p>
+        </div>
+
+        <div class="small-12 medium-4 columns informative">
+          <h6>{{product.list-2-title}}</h6>
+          <p>{{product.list-3-description}}</p>
+        </div>
+
+        <div class="small-12 medium-4 columns informative">
+          <h6>{{product.list-3-title}}</h6>
+          <p>{{product.list-3-description}}</p>
+        </div>
+
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+</section>
