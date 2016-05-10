@@ -657,12 +657,15 @@ p {
 // Banner
 
 .banner-section{
-
-  background: url("http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg") no-repeat;
   background-size: cover;
   // display: table;
   width: 100%;
   max-height: 550px;
+
+  .no-img {
+    min-height: 550px;
+  }
+
   .content {
     // display: table-cell;
     text-align: left;
@@ -674,7 +677,6 @@ p {
     position: relative;
     color:$white-color;
     font-weight: 600;
-    text-align: right;
     padding-bottom: 0.5em;
   }
 
@@ -683,7 +685,6 @@ p {
     position: relative;
     color:$white-color;
     font-weight: 500;
-    text-align: right;
     padding-bottom: 1em;
   }
 
@@ -692,16 +693,32 @@ p {
     color:$white-color;
     overflow:visible;
     max-height: 300px;
-    text-align: right;
     // padding-bottom: 2em;
+  }
+
+  .content-centered {
+    h1,h2,h3 {
+    text-align: center;
+    }
+  }
+
+  .content-right {
+    h1,h2,h3 {
+    text-align: left;
+    }
+  }
+
+  .content-left {
+    h1,h2,h3 {
+    text-align: right;
+    }
   }
 
   @include media-query($on-palm) {
     padding-top:0em;
-    h1, h2 {
-      text-align:center;
-      padding-top:0em;
-      padding-bottom:0em;
+
+    .no-img {
+      min-height: 350px;
     }
 
     h3 {
@@ -710,6 +727,29 @@ p {
 
     .content {
       padding-top:0em;
+      // display:flex;
+      flex-flow:wrap;
+      display: inline-flex;
+    }
+
+    .content-left, .content-right, .content-centered {
+      h1,h2 {
+      text-align: center;
+      padding-top:0em;
+      padding-bottom:0em;
+      }
+    }
+
+    .content-right {
+      order:1;
+    }
+
+    .left-image {
+      order: 2;
+    }
+
+    .push-right {
+      order: 3;
     }
   }
 }

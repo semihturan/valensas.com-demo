@@ -42,3 +42,11 @@
   img-1: ipad.png
   img-2: ipad.png
   img-3: ipad.png
+
+# Banner
+- banner-type: right
+  banner-title: Need Cash?
+  banner-subtitle: There is an app for that!
+  banner-description: Withdraw money using your smartphone, thanks to iBeacon technology.
+  banner-img: iphone.png
+  banner-background: sample2.jpg

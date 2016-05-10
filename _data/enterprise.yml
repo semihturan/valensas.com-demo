@@ -1,0 +1,18 @@
+- title: Tekfen
+  img: sample3.png
+  description: Donec ullamcorper nulla non metus auctor fringilla.
+
+- title: Veacon
+  img: sample3.jpg
+  description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+- title: Akbank
+  img: akbank.jpg
+  description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.
+
+- banner-type: noimg
+  banner-title: Enterprise Solutions
+  banner-subtitle: We are here to help!
+  banner-description: Withdraw money using your smartphone, thanks to iBeacon technology.
+  banner-img: iphone.png
+  banner-background: sample3.jpg
