@@ -916,15 +916,22 @@ p {
 // Common Elements
 
 .section-title {
+  color:$blue-color;
   font-size: $giant-font-size;
   font-weight: lighter;
-  color:$blue-color;
   text-align: center;
 }
 
-.quote-content {
+.heading-content {
   text-align: center;
   padding: 2em 0;
+  h1 {
+
+    color:$blue-color;
+    font-size: $giant-font-size;
+    font-weight: lighter;
+    text-align: center;
+  }
   h2 {
     font-size: 30px;
     font-weight: 300;

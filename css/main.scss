@@ -36,14 +36,14 @@ $grey-color-light: #95A5A5;
 $grey-color-dark:  #33495D;
 $jobs-color: #FF7979;
 
-$logo-header: url("/images/valensas.svg");
-$logo-footer: url("/images/valensas-white.svg");
-$arrow-black-left: url("/images/arrow-black-l.svg");
-$arrow-black-right: url("/images/arrow-black-r.svg");
-$arrow-white-left: url("/images/arrow-white-l.svg");
-$arrow-white-right: url("/images/arrow-white-r.svg");
-$apostrophe-left: url("/images/apostrophe-l.svg");
-$apostrophe-right: url("/images/apostrophe-r.svg");
+$logo-header: url("{{site.baseurl }}/images/valensas.svg");
+$logo-footer: url("{{site.baseurl }}/images/valensas-white.svg");
+$arrow-black-left: url("{{site.baseurl }}/images/arrow-black-l.svg");
+$arrow-black-right: url("{{site.baseurl }}/images/arrow-black-r.svg");
+$arrow-white-left: url("{{site.baseurl }}/images/arrow-white-l.svg");
+$arrow-white-right: url("{{site.baseurl }}/images/arrow-white-r.svg");
+$apostrophe-left: url("{{site.baseurl }}/images/apostrophe-l.svg");
+$apostrophe-right: url("{{site.baseurl }}/images/apostrophe-r.svg");
 
 // Width of the content area
 $content-width:    800px;
