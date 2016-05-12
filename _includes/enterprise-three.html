@@ -1,0 +1,18 @@
+<section class="enterprise1-section">
+  {% for solution in site.data.enterprise %}
+    {% if forloop.index == 3 %}
+    <div class="row content-wrapper">
+      <div class="small-12 medium-6 columns informative-wrapper">
+        <h3>{{solution.title}}</h3>
+        <p>{{solution.description}}</p>
+      </div>
+      <div class="small-12 medium-6 columns list-icon">
+        <img src="{{site.baseurl }}/images/{{solution.img}}"/>
+      </div>
+      <div class="small-12 columns paragraph-wrapper">
+        <p>{{solution.paragraph}}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</section>

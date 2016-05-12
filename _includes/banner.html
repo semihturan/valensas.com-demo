@@ -1,42 +1,44 @@
 <section class="fullpage">  </section>
 {% for data in site.data[page.data] %}
-<section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ data.banner-background }}") no-repeat;'>
+{% if data.banner-type %}
+<section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ data.banner-background }}") no-repeat;  background-size: cover;'>
+{% endif %}
 {% endfor %}
   <div class="row content">
     {% for data in site.data[page.data] %}
-    <!-- {% if data.banner-type %} -->
+    {% if data.banner-type %}
     {% if data.banner-type == "left" %}
     <div class="small-6 medium-6 large-6 columns left-image">
       <img src="{{site.baseurl }}/images/{{ data.banner-img }}" alt="RESERVED">
     </div>
     <div class="small-12 medium-6 large-6 columns content-right">
-      <h1>{{ data.banner-title }}</h1>
-      <h2>{{ data.banner-subtitle }}</h2>
-      <h3 class="show-for-medium">{{ data.banner-description }}</h3>
+      <h1 style="color:{{ data.banner-title-color }};">{{ data.banner-title }}</h1>
+      <h2 style="color:{{ data.banner-subtitle-color }};">{{ data.banner-subtitle }}</h2>
+      <h3 class="show-for-medium" style="color:{{ data.banner-description-color }};">{{ data.banner-description }}</h3>
     </div>
     <div class="small-6 columns end hide-for-medium content-right push-right">
-    <h3>{{ data.banner-description }}</h3>
+    <h3 style="color:{{ data.banner-description-color }};">{{ data.banner-description }}</h3>
     </div>
     {% elsif data.banner-type == "right" %}
     <div class="small-12 medium-6 large-6 columns content-left">
-      <h1>{{ data.banner-title }}</h1>
-      <h2>{{ data.banner-subtitle }}</h2>
-      <h3 class="show-for-medium">{{ data.banner-description }}</h3>
+      <h1 style="color:{{ data.banner-title-color }};">{{ data.banner-title }}</h1>
+      <h2 style="color:{{ data.banner-subtitle-color }};">{{ data.banner-subtitle }}</h2>
+      <h3 class="show-for-medium" style="color:{{ data.banner-description-color }};">{{ data.banner-description }}</h3>
     </div>
     <div class="small-6 columns end hide-for-medium content-left">
-    <h3>{{ data.banner-description }}</h3>
+    <h3 style="color:{{ data.banner-description-color }};">{{ data.banner-description }}</h3>
     </div>
     <div class="small-6 medium-6 large-6 columns end">
       <img src="{{site.baseurl }}/images/{{ data.banner-img }}" alt="RESERVED">
     </div>
     {% else %}
     <div class="large-12 columns content-centered no-img">
-      <h1>{{ data.banner-title }}</h1>
-      <h2>{{ data.banner-subtitle }}</h2>
-      <h3>{{ data.banner-description }}</h3>
+      <h1 style="color:{{ data.banner-title-color }};">{{ data.banner-title }}</h1>
+      <h2 style="color:{{ data.banner-subtitle-color }};">{{ data.banner-subtitle }}</h2>
+      <h3 style="color:{{ data.banner-description-color }};">{{ data.banner-description }}</h3>
     </div>
     {% endif %}
-    <!-- {% endif %} -->
+    {% endif %}
     {% endfor %}
   </div>
 </section>

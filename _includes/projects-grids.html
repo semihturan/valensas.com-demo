@@ -1,0 +1,17 @@
+<section class="projects-section">
+  <div class="row small-up-1 medium-up-2 large-up-3 small-uncollapse">
+    {% for project in site.data.projects %}
+    {% if project.title %}
+    <div class="column">
+      <div>
+        <img src="{{site.baseurl }}/images/{{project.thumbnail-img}}" alt="">
+      </div>
+      <div>
+        <h3>{{project.title}}</h3>
+        <div class="ellipsis-text">{{project.description}}<a class='more' href='{{site.baseurl }}/projects/{{project.title}}.html'>More</a></div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>

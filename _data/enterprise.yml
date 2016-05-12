@@ -1,18 +1,34 @@
-- title: Tekfen
-  img: sample3.png
-  description: Donec ullamcorper nulla non metus auctor fringilla.
+# First Solution
+- title: Digital Signage
+  description: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.
+  paragraph: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
+  img: ipad.png
 
-- title: Veacon
-  img: sample3.jpg
-  description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+# Second Solution
+- title: Lecture Capture
+  description: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.
+  img: ipad.png
 
-- title: Akbank
-  img: akbank.jpg
-  description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.
+# Third Solution
+- title: Mobile Gaming
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+  paragraph: Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.
+  img: ipad.png
 
+# Forth Solution
+- title: Video & Audio Streaming
+  description: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.
+  img: ipad.png
+
+# Banner
 - banner-type: noimg
   banner-title: Enterprise Solutions
+  banner-title-color: purple
   banner-subtitle: We are here to help!
+  banner-subtitle-color: orange
   banner-description: Withdraw money using your smartphone, thanks to iBeacon technology.
-  banner-img: iphone.png
+  banner-description-color: yellow
   banner-background: sample3.jpg
+
+#Quote
+- quote: Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.

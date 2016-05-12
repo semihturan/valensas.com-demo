@@ -1,9 +1,13 @@
 <section class="quote-section">
   <div class="row">
-    <div class="large-12 large-centered columns">
+    <div class="large-12 large-centered columns heading-content">
       <div class="start-quote"></div>
-      <h2 class="heading-content">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</h2>
-      <div class="end-quote"> </div>
+      {% for data in site.data[page.data] %}
+      {% if data.quote %}
+      <h2>{{ data.quote }}</h2>
+      {% endif %}
+      {% endfor %}
+      <div class="end-quote"></div>
     </div>
   </div>
 </section>

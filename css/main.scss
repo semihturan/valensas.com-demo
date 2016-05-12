@@ -6,6 +6,7 @@
 // @import "bootstrap";
 @import"foundation";
 @import"flickity";
+@import"modaal";
 
 
 // Our variables
@@ -15,6 +16,7 @@ $base-font-family: 'Open Sans', sans-serif;
 $small-font-size:   14px;
 $medium-font-size:   20px;
 $large-font-size:   24px;
+$xlarge-font-size:   30px;
 $giant-font-size: 50px;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -48,6 +50,7 @@ $apostrophe-right: url("{{site.baseurl }}/images/apostrophe-r.svg");
 // Width of the content area
 $content-width:    800px;
 $on-palm:          639px; //default is 600
+$on-tablet:          1050px; // added
 $on-laptop:        800px;
 
 
