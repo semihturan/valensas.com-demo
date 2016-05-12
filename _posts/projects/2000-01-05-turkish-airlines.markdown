@@ -1,0 +1,37 @@
+---
+layout: project-detail-layout
+title:  Turkish Airlines
+subtitle: Lorem Ipsum is simply dummy of the printing
+permalink: /projects/turkish-airlines.html
+thumbnail: project1.png
+images:
+  - img: iphone3.png
+  - img: iphone3.png
+  - img: iphone3.png
+  - img: iphone3.png
+  - img: iphone3.png
+project-year: February, 2014
+project-types:
+  - type: iPhone
+  - type: Client Projects
+tags:
+  - tag: dogus
+  - tag: e-commerce
+  - tag: m-commerce
+  - tag: n11
+  - tag: online shopping
+  - tag: products
+  - tag: sk planet
+---
+
+Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
+
+Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
+
+The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.
+
+Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
+
+Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
+
+The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.

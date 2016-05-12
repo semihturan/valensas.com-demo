@@ -23,30 +23,30 @@
         <span class="value">{{ type.type }}</span>
         {% endfor %}
       </p>
-      <p class="tags">
+      <!-- <p class="tags">
         <span class="key">Tagged with:</span>
         {% for tag in page.tags[] %}
         <a href="#"><span class="value"><u>{{ tag.tag }}</u></span></a>
         {% endfor %}
-      </p>
+      </p> -->
     </div>
   </div>
-  <div class="line"></div>
+  <!-- <div class="line"></div>
   <div class="large-12 columns heading-content">
     <h1>Similar Products</h1>
-  </div>
-  <div class=" row related-products">
+  </div> -->
+  <!-- <div class=" row related-products">
     {% for project in site.posts %}
     {% if project.layout == "project-detail-layout" %}
     <div class="small-12 large-4 columns">
       <div>
-        <a href="{{ site.baseurl }}{{project.permalink}}"><img src="{{ site.baseurl }}/images/{{project.thumbnail}}" alt=""></a>
+        <a href="{{ site.baseurl }}{{project.permalink }}"><img src="{{ site.baseurl }}/images/{{ project.thumbnail }}" alt=""></a>
       </div>
       <div>
         <h3>{{ project.title }}</h3>
       </div>
     </div>
     {% endif %}
-{% endfor %}
-  </div>
+    {% endfor %}
+  </div> -->
 </section>

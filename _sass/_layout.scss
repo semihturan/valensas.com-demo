@@ -970,7 +970,7 @@ p {
   .column {
     // border: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.8);
     max-height: 370px;
-    padding: 1em;
+    padding: 0.5em;
   }
 
   h3{
@@ -1034,12 +1034,15 @@ p {
     padding-top: 2em;
     border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
   }
+
+  h3 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $blue-color;
+  }
+
   .content {
     padding: 1em 3em;
-    h3{
-      font-weight: lighter;
-      text-transform: uppercase;
-    }
     .key {
       color: $blue-color;
     }
@@ -1057,9 +1060,8 @@ p {
   .related-products{
     text-align: center;
     padding: 2em 3em;
-
     div {
-      padding: 1em 0;
+      padding: 0 0 1em 0;
     }
   }
 }
