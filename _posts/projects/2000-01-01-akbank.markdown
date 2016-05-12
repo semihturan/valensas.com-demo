@@ -1,7 +1,9 @@
 ---
 layout: project-detail-layout
 title:  Akbank
+subtitle: Lorem Ipsum is simply dummy of the printing
 permalink: /projects/Akbank.html
+thumbnail: project1.png
 images:
   - img: iphone3.png
   - img: iphone3.png
@@ -21,8 +23,6 @@ tags:
   - tag: products
   - tag: sk planet
 ---
-
-### Lorem Ipsum is simply dummy of the printing. ###
 
 Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
 
