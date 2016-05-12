@@ -16,8 +16,18 @@
     <div class="small-12 columns content">
       {{page.content}}
       <p><span class="key">Project Year:</span>{{ page.project-year}}</p>
-      <p><span class="key">Project Type:</span>{% for type in [page.project-types] %} {{ type.type }} {% endfor %}</p>
-      <p><span class="key">Tagged with:</span><u>{% for tag in {{ page.tags | smartify }} %} {{ tag.tag }} {% endfor %}</u></p>
+      <p>
+        <span class="key">Project Type:</span>
+        {% for type in page.project-types[] %}
+        <span class="value">{{ type.type }}</span>
+        {% endfor %}
+      </p>
+      <p class="tags">
+        <span class="key">Tagged with:</span>
+        {% for tag in page.tags[] %}
+        <a href="#"><span class="value"><u>{{ tag.tag }}</u></span></a>
+        {% endfor %}
+      </p>
     </div>
   </div>
 </section>

@@ -1040,17 +1040,20 @@ p {
       font-weight: lighter;
       text-transform: uppercase;
     }
-    span{
+    .key {
       color: $blue-color;
     }
+    .value {
+      color: $grey-color-light;
+    }
+    .value:not(:last-child)::after {
+      content: ",";
+    }
+    .value:last-child::after {
+      content: "";
+    }
   }
-  .key {
-    color: $blue-color;
-  }
-
 }
-
-
 
 // Common Elements
 

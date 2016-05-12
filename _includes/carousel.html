@@ -1,7 +1,5 @@
 <section class="fullpage">  </section>
-
 <section class="carousel-section">
-
   <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
     {% for product in site.data.carousel %}
     <div class="gallery-cell row expanded">
@@ -20,83 +18,4 @@
     </div>
     {% endfor %}
   </div>
-
-  <!-- <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-    <ul class="orbit-container">
-      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-      {% for product in site.data.products %}
-        {% if forloop.first %}
-        <li class="is-active orbit-slide">
-          <div class="carousel-caption">
-            <h1>{{product.title}}</h1>
-            <h3 class="show-for-medium">{{product.description}}</h3>
-            <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
-          </div>
-          <img class="orbit-image" src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
-          <a class="show-for-small-only" href="#"><img class="orbit-image" src="{{site.baseurl }}/images/{{ product.img }}"></a>
-        </li>
-        {% else %}
-        <li class="orbit-slide">
-          <div class="carousel-caption">
-            <h1>{{product.title}}</h1>
-            <h3 class="show-for-medium">{{product.description}}</h3>
-            <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
-          </div>
-          <img class="orbit-image" src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
-          <a class="show-for-small-only" href="#"><img class="orbit-image" src="{{site.baseurl }}/images/{{ product.img }}"></a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-    <nav class="orbit-bullets">
-      {% for product in site.data.products %}
-      {% assign imgIndex = {{forloop.index0}} %}
-        {% if forloop.first %}
-        <button class="is-active" data-slide="{{ imgIndex }}"><span class="show-for-sr"></span><span class="show-for-sr"></span></button>
-        {% else %}
-        <button data-slide="{{ imgIndex }}"><span class="show-for-sr"></span></button>
-        {% endif %}
-      {% endfor %}
-    </nav>
-  </div> -->
 </section>
-
-  <!-- <div id="product-line-carousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      {% for product in site.data.products %}
-      {% assign imgIndex = {{forloop.index0}} %}
-        {% if forloop.first %}
-          <li data-target="#product-line-carousel" data-slide-to="{{ imgIndex }}" class="active"></li>
-        {% else %}
-          <li data-target="#product-line-carousel" data-slide-to="{{ imgIndex }}"></li>
-        {% endif %}
-      {% endfor %}
-    </ol>
-
-    <div class="carousel-inner carousel-img" role="listbox">
-      {% for product in site.data.products %}
-        {% if forloop.first %}
-          <div class="item active">
-            <img src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
-            <a class="show-for-small-only" href="#"><img src="{{site.baseurl }}/images/{{ product.img }}"></a>
-            <div class="carousel-caption">
-              <h1>{{product.title}}</h1>
-              <h3 class="show-for-medium">{{product.description}}</h3>
-              <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
-            </div>
-          </div>
-        {% else %}
-          <div class="item">
-            <img src="{{site.baseurl }}/images/{{ product.img }}"  class="show-for-medium">
-            <a class="show-for-small-only" href="#"><img src="{{site.baseurl }}/images/{{ product.img }}"></a>
-            <div class="carousel-caption">
-              <h1>{{product.title}}</h1>
-              <h3 class="show-for-medium">{{product.description}}</h3>
-              <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div> -->
