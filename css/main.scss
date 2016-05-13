@@ -10,7 +10,33 @@
 
 
 // Our variables
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+@font-face {
+font-family: 'Open Sans';
+src: url(/fonts/OpenSans-Regular.ttf) format('truetype');
+font-weight: 400;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url(/fonts/OpenSans-Light.ttf) format('truetype');
+font-weight: 300;
+ }
+@font-face {
+font-family: 'Open Sans';
+src: url(/fonts/OpenSans-Semibold.ttf) format('truetype');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url(/fonts/OpenSans-Bold.ttf) format('truetype');
+font-weight: 700;
+}
+@font-face {
+font-family: 'Open Sans';
+src: url(/fonts/OpenSans-ExtraBold.ttf) format('truetype');
+font-weight: 800;
+}
 
 $base-font-family: 'Open Sans', sans-serif;
 $small-font-size:   14px;
