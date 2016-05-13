@@ -157,7 +157,6 @@ p {
 // Carousel
 
 .carousel-section {
-  background-repeat: no-repeat;
   height: 550px;
 
   .carousel-content {
@@ -682,10 +681,10 @@ p {
 .banner-section{
   // display: table;
   width: 100%;
-  max-height: 550px;
+  height: 550px;
 
   .no-img {
-    min-height: 500px;
+    min-height: 440px;
   }
 
   .content {
@@ -738,9 +737,10 @@ p {
 
   @include media-query($on-palm) {
     padding-top:0em;
+    height: 450px;
 
     .no-img {
-      min-height: 350px;
+      max-height: 400px;
     }
 
     h3 {
@@ -772,6 +772,7 @@ p {
 
     .push-right {
       order: 3;
+      padding-bottom: 20em;
     }
   }
 }
@@ -805,6 +806,7 @@ p {
   }
 
   @include media-query($on-palm) {
+      padding-top: 4em;
     .content-wrapper {
       display:flex;
       flex-flow: column;
@@ -935,8 +937,6 @@ p {
 }
 
 .enterprise1-section {
-  // padding-bottom: 1em;
-  border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
 
   .content-wrapper {
     padding: 2em;
@@ -1044,6 +1044,9 @@ p {
 // Project detail
 
 .project-detail-section {
+  .line {
+    padding-top: 2em;
+  }
   .gallery-cell {
     height: 440px;
   }
@@ -1053,10 +1056,6 @@ p {
       height: 440px;
       padding: 0.5em 0;
     }
-  }
-  .line {
-    padding-top: 2em;
-    border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
   }
 
   h3 {
@@ -1120,4 +1119,8 @@ p {
 
 .modaal-container {
   background: transparent;
+}
+
+.line {
+  border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
 }
