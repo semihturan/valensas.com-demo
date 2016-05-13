@@ -112,6 +112,24 @@ module.exports = function(grunt) {
                     src: '**/*.html',
                     dest: '<%= app.dist %>/<%= app.baseurl %>'
                 }]
+            },
+            server: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,
+                    removeEmptyAttributes: true,
+                    minifyJS: true,
+                    minifyCSS: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '_site/',
+                    src: '*.html',
+                    dest: '_site/'
+                }]
             }
         },
         sass: {
@@ -121,9 +139,9 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= app.app %>/css',
-                    src: '**/*.{scss,sass}',
-                    dest: '.tmp/<%= app.baseurl %>/css',
+                    cwd: '/css',
+                    src: '*.{scss,sass}',
+                    dest: '_site/css',
                     ext: '.css'
                 }]
             },
@@ -147,9 +165,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '.tmp/<%= app.baseurl %>/css',
-                    src: '**/*.css',
-                    dest: '.tmp/<%= app.baseurl %>/css'
+                    cwd: '_site/css',
+                    src: '*.css',
+                    dest: '_site/css'
                 }]
             }
         },
@@ -180,9 +198,21 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '.tmp/<%= app.baseurl %>/css',
+                    cwd: '_site/css',
                     src: ['*.css'],
-                    dest: '.tmp/<%= app.baseurl %>/css'
+                    dest: '_site/css'
+                }]
+            },
+            server: {
+                options: {
+                    keepSpecialComments: 0,
+                    check: 'gzip'
+                },
+                files: [{
+                    expand: true,
+                    cwd:  '.tmp/<%= app.baseurl %>/css',
+                    src: ['.css'],
+                    dest: '.tmp/<%= app.baseurl %>/css',
                 }]
             }
         },
@@ -248,6 +278,8 @@ module.exports = function(grunt) {
             'jekyll:server',
             'sass:server',
             'autoprefixer',
+            'cssmin:server',
+            'htmlmin:server',
             // 'uglify',
             'connect:livereload',
             'watch'
