@@ -18,3 +18,4 @@ url: "http://www.semihturan.xyz" # the base hostname & protocol for your site
 markdown: kramdown
 sass:
   sass_dir: _sass
+  style: compressed
