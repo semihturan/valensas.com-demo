@@ -6,25 +6,16 @@ module.exports = function(grunt) {
     // Load all Grunt tasks
     require('jit-grunt')(grunt);
 
-    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.initConfig({
         app: {
             app: '',
-            dist: '',
+            dist: 'dist',
             baseurl: ''
         },
         watch: {
-            sass: {
-                files: ['/_sass/*.{scss,sass}'],
-                tasks: ['sass:server', 'autoprefixer']
-            },
-            scripts: {
-                files: ['/js/*.{js}'],
-            },
             jekyll: {
                 files: [
-                    '/*.{html,yml,md,mkd,markdown}'
-                ],
+                    '_site/**/*.{html,yml,md,mkd,markdown}'                ],
                 tasks: ['jekyll:server']
             },
             livereload: {
@@ -32,10 +23,10 @@ module.exports = function(grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '.jekyll/**/*.{html,yml,md,mkd,markdown}',
-                    '.tmp/<%= app.baseurl %>/css/*.css',
-                    '.tmp/<%= app.baseurl %>/js/*.js',
-                    '/images/*.{gif,jpg,jpeg,png,svg,webp}'
+                    '_site/**/*.{html,yml,md,mkd,markdown}',
+                    '_site/css/*.css',
+                    '_site/js/*.js',
+                    '_site/images/*.{svg,gif,jpg,jpeg,png,svg,webp}'
                 ]
             }
         },
@@ -44,9 +35,7 @@ module.exports = function(grunt) {
                 port: 4000,
                 livereload: 35729,
                 // change this to '0.0.0.0' to access the server from outside
-                // hostname: 'localhost'
                 hostname: '0.0.0.0'
-
             },
             livereload: {
                 options: {
@@ -54,9 +43,9 @@ module.exports = function(grunt) {
                         target: 'http://localhost:4000/<%= app.baseurl %>'
                     },
                     base: [
-                        '.jekyll',
+                        '_site',
                         '.tmp',
-                        ''
+                        '<%= app.app %>'
                     ]
                 }
             },
@@ -74,7 +63,7 @@ module.exports = function(grunt) {
         },
         clean: {
             server: [
-                '.jekyll',
+                '_site',
                 '.tmp'
             ],
             dist: {
@@ -91,7 +80,7 @@ module.exports = function(grunt) {
         jekyll: {
             options: {
                 config: '_config.yml',
-                src: ''
+                src: '<%= app.app %>'
             },
             dist: {
                 options: {
@@ -101,7 +90,7 @@ module.exports = function(grunt) {
             server: {
                 options: {
                     config: '_config.yml',
-                    dest: '.jekyll/<%= app.baseurl %>'
+                    dest: '_site/<%= app.baseurl %>'
                 }
             }
         },
@@ -132,7 +121,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '/css/',
+                    cwd: '<%= app.app %>/css',
                     src: '**/*.{scss,sass}',
                     dest: '.tmp/<%= app.baseurl %>/css',
                     ext: '.css'
@@ -144,21 +133,11 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '/css/',
+                    cwd: '<%= app.app %>/sass',
                     src: '**/*.{scss,sass}',
                     dest: '<%= app.dist %>/<%= app.baseurl %>/css',
                     ext: '.css'
                 }]
-            }
-        },
-        uncss: {
-            options: {
-                htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
-                report: 'gzip'
-            },
-            dist: {
-                src: '<%= app.dist %>/<%= app.baseurl %>/**/*.html',
-                dest: '.tmp/<%= app.baseurl %>/css/blog.css'
             }
         },
         autoprefixer: {
@@ -179,7 +158,7 @@ module.exports = function(grunt) {
                 options: {
                     base: './',
                     css: [
-                        '.tmp/<%= app.baseurl %>/css/blog.css'
+                        '.tmp/<%= app.baseurl %>/css/build.css'
                     ],
                     minify: true,
                     width: 320,
@@ -216,7 +195,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '<%= app.dist %>/<%= app.baseurl %>/images',
                     src: '**/*.{jpg,jpeg,png,gif}',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/images'
                 }]
             }
         },
@@ -226,7 +205,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: '<%= app.dist %>/<%= app.baseurl %>/images',
                     src: '**/*.svg',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/images'
                 }]
             }
         },
@@ -248,7 +227,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'semihturan@github.com/semihturan/valensas.com-demo.git',
+                    remote: 'semihturan@github.com:semihturan/valensas.com-demo.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
@@ -269,6 +248,7 @@ module.exports = function(grunt) {
             'jekyll:server',
             'sass:server',
             'autoprefixer',
+            // 'uglify',
             'connect:livereload',
             'watch'
         ]);
@@ -282,12 +262,12 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jekyll:dist',
-        'imagemin',
-        'svgmin',
+        // 'imagemin',
+        // 'svgmin',
         'sass:dist',
-        'uncss',
         'autoprefixer',
         'cssmin',
+        // 'uglify',
         'critical',
         'htmlmin'
     ]);
@@ -295,7 +275,8 @@ module.exports = function(grunt) {
     grunt.registerTask('deploy', [
         'build',
         'copy',
-        'buildcontrol'
+        'buildcontrol',
+        'gh-pages'
     ]);
 
     grunt.registerTask('default', [
