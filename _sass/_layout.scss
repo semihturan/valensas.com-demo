@@ -21,6 +21,18 @@ p {
     color: $grey-color-light;
 }
 
+
+.gallery-cell {
+  width: 100%;
+  height: 550px;
+  margin-right: 10px;
+
+  @include media-query($on-palm) {
+    height: 440px;
+    }
+}
+
+
 // Fullpage for adjusting top-bar
 
 .fullpage {
@@ -146,14 +158,7 @@ p {
 
 .carousel-section {
   background-repeat: no-repeat;
-  max-height: 550px;
-}
-
-.gallery-cell {
-
-  width: 100%;
-  max-height: 550px;
-  margin-right: 10px;
+  height: 550px;
 
   .carousel-content {
     overflow: hidden;
@@ -166,22 +171,25 @@ p {
     text-align: right;
     font-size: $large-font-size;
     color: $white-color;
-
-    @include media-query($on-laptop) {
-        max-height: 400px;
-    }
   }
 
   .carousel-background {
+    height: 550px;
     width:100%;
     background-size: cover;
   }
 
   @include media-query($on-palm) {
-    max-height: 440px;
+    height: 440px;
     .carousel-content {
+      height: 440px;
       text-align: center;
       transform: translateY(5%);
+    }
+    .carousel-background {
+      height: 440px;
+      width:100%;
+      background-size: cover;
     }
   }
 
@@ -306,21 +314,32 @@ p {
 .casestudies-section {
   background-repeat: no-repeat;
 
+  .gallery-cell {
+    height: 420px;
+  }
+
   .section-header {
     background: $grey-color-ultralight;
   }
 
   .carousel-content {
+    text-align: right;
     position: relative;
     transform: translateY(0);
-    max-height: 390px;
-    @include media-query($on-palm) {
-      max-height: 420px;
-    }
-  }
+    height: 390px;
 
-  h3 {
-    color:$blue-color;
+    img{
+      height: 100%;
+    }
+
+    h3 {
+      color:$blue-color;
+    }
+
+    @include media-query($on-palm) {
+      height: 440px;
+      text-align: center;
+    }
   }
 
   .carousel-gradient-background {
@@ -328,17 +347,17 @@ p {
     background: -webkit-linear-gradient(top, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
     background: linear-gradient(to bottom, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
     width:100%;
-    height: 390px;
+    height: 440px;
     @include media-query($on-palm) {
-        height: 390px;
+        height: 440px;
     }
   }
 }
 
 .mobile-screen-img {
-  float: left;
+  text-align: left;
   @include media-query($on-palm) {
-    float: none;
+    text-align: center;;
   }
 }
 
@@ -774,12 +793,14 @@ p {
     padding: 2em;
   }
 
+  .gallery-cell {
+    height: 550px;
+  }
+
   .gallery-wrapper {
     text-align: center;
-    max-height: 550px;
     img {
-      height: 50%;
-      width: 50%;
+      height: 100%;
     }
   }
 
@@ -799,16 +820,10 @@ p {
     }
     .gallery-wrapper {
       order:1;
-      max-height: 550px;
-      img {
-        padding-bottom: 2em;
-        height: 60%;
-        width: 60%;
-      }
     }
     .gallery-cell {
       // bottom: 1em;
-      min-height: 480px;
+      height: 480px;
     }
   }
 }
@@ -835,9 +850,15 @@ p {
     padding: 2em;
   }
 
+  .gallery-cell {
+    height: 300px;
+  }
+
   .gallery-wrapper {
     text-align: center;
-    max-height: 550px;
+    img {
+      height: 100%;
+    }
   }
 
   @include media-query($on-palm) {
@@ -1023,10 +1044,13 @@ p {
 // Project detail
 
 .project-detail-section {
+  .gallery-cell {
+    height: 440px;
+  }
   .images {
     text-align: center;
     img {
-      max-height: 440px;
+      height: 440px;
       padding: 0.5em 0;
     }
   }
