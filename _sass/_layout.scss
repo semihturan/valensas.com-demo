@@ -157,6 +157,10 @@ p {
 // Carousel
 
 .carousel-section {
+
+  .gallery {
+      display: none;
+  }
   height: 550px;
 
   .carousel-content {
@@ -990,7 +994,7 @@ p {
 .projects-section {
   .column {
     // border: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.8);
-    max-height: 370px;
+    height: 370px;
     padding: 0.5em;
   }
 
@@ -1047,6 +1051,7 @@ p {
   .line {
     padding-top: 2em;
   }
+
   .gallery-cell {
     height: 440px;
   }
@@ -1119,8 +1124,13 @@ p {
 
 .modaal-container {
   background: transparent;
+  //  filter: blur(5px);
 }
 
 .line {
   border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+}
+
+.animated {
+    display: none;
 }

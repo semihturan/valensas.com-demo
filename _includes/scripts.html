@@ -38,7 +38,7 @@ $('.galleryy').modaal({
   background: '#111',
   height: 400,
   overlay_opacity: 0.5,
-  background_scroll: true,
+  background_scroll: false,
   animation: 'fade',
   animation_speed: 300
 });
@@ -56,5 +56,14 @@ $(document).ready(function() {
          $("a", this).remove();
         }
     }
+});
+</script>
+
+<script>
+// With the element initially hidden, we can show it slowly:
+$( document).ready(function() {
+$( ".animated" ).fadeIn( "slow", function() {
+  // Animation complete
+});
 });
 </script>

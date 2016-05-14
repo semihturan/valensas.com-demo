@@ -1,6 +1,6 @@
 <section class="fullpage">  </section>
 <section class="carousel-section">
-  <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
+  <div class="gallery js-flickity animated" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
     {% for product in site.data.carousel %}
     <div class="gallery-cell expanded row" style='background: url("{{site.baseurl }}/images/{{ product.img }}") no-repeat;background-size: cover;' >
       <div class="carousel-content">

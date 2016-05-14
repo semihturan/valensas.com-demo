@@ -4,7 +4,7 @@
 <section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ data.banner-background }}") no-repeat;  background-size: cover;'>
 {% endif %}
 {% endfor %}
-  <div class="row content">
+  <div class="row content animated">
     {% for data in site.data[page.data] %}
     {% if data.banner-type %}
     {% if data.banner-type == "left" %}
