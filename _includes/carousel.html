@@ -1,0 +1,19 @@
+<section class="fullpage">  </section>
+<section class="carousel-section">
+  <div class="gallery js-flickity animated" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
+    {% for product in site.data.carousel %}
+    <div class="gallery-cell expanded row" style='background: url("{{site.baseurl }}/images/{{ product.img }}") no-repeat;background-size: cover;' >
+      <div class="carousel-content">
+        <div class="small-8 medium-6 large-6 small-centered medium-uncentered large-uncentered columns">
+          <img src="{{site.baseurl }}/images/{{ product.title }}.png" alt="{{ product.title }}">
+        </div>
+        <div class="small-12 medium-5 large-4 small-centered medium-uncentered  large-uncentered columns end">
+            <h1>{{product.title}}</h1>
+            <h3 class="show-for-medium">{{product.description}}</h3>
+            <a class="hollow button show-for-medium" href="#">Learn more about {{product.title}}</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

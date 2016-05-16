@@ -1,0 +1,121 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Used SCSS files
+@import"foundation";
+@import"flickity";
+@import"modaal";
+
+
+// Our variables
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("{{site.baseurl }}/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("{{site.baseurl }}/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("{{site.baseurl }}/fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("{{site.baseurl }}/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("{{site.baseurl }}/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800; }
+
+$base-font-family: 'Open Sans', sans-serif;
+$small-font-size:   14px;
+$medium-font-size:   20px;
+$large-font-size:   24px;
+$xlarge-font-size:   30px;
+$giant-font-size: 50px;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #555555;
+$background-color: #fff;
+$brand-color:      #003C6E;
+$footer-color: rgb(49, 67, 97);
+$header-color: #fff;
+
+$blue-color: #2F6BC1;
+$white-color:       #fff;
+$grey-color:       #697783;
+$grey-color-ultralight: #EDF1F1;
+$grey-color-light: #95A5A5;
+$grey-color-dark:  #33495D;
+$jobs-color: #FF7979;
+
+$logo-header: url("{{site.baseurl }}/images/valensas.svg");
+$logo-footer: url("{{site.baseurl }}/images/valensas-white.svg");
+$arrow-black-left: url("{{site.baseurl }}/images/arrow-black-l.svg");
+$arrow-black-right: url("{{site.baseurl }}/images/arrow-black-r.svg");
+$arrow-white-left: url("{{site.baseurl }}/images/arrow-white-l.svg");
+$arrow-white-right: url("{{site.baseurl }}/images/arrow-white-r.svg");
+$apostrophe-left: url("{{site.baseurl }}/images/apostrophe-l.svg");
+$apostrophe-right: url("{{site.baseurl }}/images/apostrophe-r.svg");
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          639px; //default is 600
+$on-tablet:          1050px; // added
+$on-laptop:        800px;
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+.draw-border  {
+  > div > div,
+  > div,
+  section > div,
+  section > div > ol,
+  section > div > ol > li,
+  section > div > div,
+  section > div > div > div,
+  section > div > div > div > div,
+  section > div > div > div > div > div,
+  header > div,
+  header > div > div,
+  header > div > div > div,
+  header > div > div > div > div,
+  header > div > div > div > div > ul,
+  header > div > div > div > div > ul > li {
+    border-style: solid;border-width:2px;border-color:$grey-color-dark;
+  }
+  footer > div,
+  footer > div > div,
+  footer > div > div > *,
+  {
+    border-style: solid;border-width:2px;border-color:$white-color;
+  }
+};
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout"
+;

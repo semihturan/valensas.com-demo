@@ -1,0 +1,47 @@
+<footer class="footer-section">
+  <div class="row  footer">
+    <div class="small-10 small-offset-2 medium-8 medium-offset-2 large-6 large-offset-0 columns end">
+        <a href="{{site.baseurl }}/" ><img class="footer-logo" alt="Valensas"></a>
+        <h3 class="footer-description-title">3,500,000+ users registered since 2008</h3>
+        <h3 class="footer-description">We create products that help your life to look even better.</h3>
+    </div>
+    <div class="small-3 small-offset-2 medium-3 medium-offset-2 large-2 large-offset-0 columns">
+      <h6>About</h6>
+      <ul>
+        <li>
+            <a href="#">History</a>
+        </li>
+        <li>
+            <a href="#">Blog</a>
+        </li>
+        <li>
+            <a href="#">Team</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-3 medium-3 large-2 columns">
+      <h6>Media</h6>
+      <ul>
+        <li>
+          <a href="#">Press</a>
+      </li>
+      <li>
+          <a href="#">Awards</a>
+      </li>
+      <li>
+          <a href="#">Events</a>
+        </li>
+      </ul>
+    </div>
+    <div class="small-3 medium-3 end large-2 columns end">
+      <h6>Follow</h6>
+      <ul>
+        {% for media in site.data.socialmedia %}
+        <li>
+          <a href="{{media.url}}" target="_blank">{{media.name}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

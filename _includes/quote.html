@@ -1,0 +1,13 @@
+<section class="quote-section">
+  <div class="row">
+    <div class="large-12 large-centered columns heading-content">
+      <div class="start-quote"></div>
+      {% for data in site.data[page.data] %}
+      {% if data.quote %}
+      <h2>{{ data.quote }}</h2>
+      {% endif %}
+      {% endfor %}
+      <div class="end-quote"></div>
+    </div>
+  </div>
+</section>

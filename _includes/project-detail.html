@@ -1,0 +1,52 @@
+<section class="fullpage">  </section>
+<section class="project-detail-section">
+  <div class="row animated">
+    <div class="small-12 columns images">
+      <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": true,"arrowShape": "M54.1,99.2L56.3,97.2L10.2,51C9.8,50.3 9.8,49.7 10.2,49L56.4,2.8L54.2,0.8C53.8,0.1 52.9,0.1 52.4,0.8L3.9,49C3.5,49.7 3.5,50.3 3.9,51L52.3,99.2C52.8,99.9 53.7,99.9 54.1,99.2L54.1,99.2z"}'>
+        {% for image in {{page.images | smartify }} %}
+        <div class="gallery-cell row">
+          <img class="" src="{{site.baseurl }}/images/{{ image.img }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="row">
+    <div class="small-12 columns content">
+      <h3>{{page.subtitle}}</h3>
+      {{page.content}}
+      <p><span class="key">Project Year:</span>{{ page.project-year}}</p>
+      <p>
+        <span class="key">Project Type:</span>
+        {% for type in page.project-types[] %}
+        <span class="value">{{ type.type }}</span>
+        {% endfor %}
+      </p>
+      <!-- <p class="tags">
+        <span class="key">Tagged with:</span>
+        {% for tag in page.tags[] %}
+        <a href="#"><span class="value"><u>{{ tag.tag }}</u></span></a>
+        {% endfor %}
+      </p> -->
+    </div>
+  </div>
+  <!-- <div class="line"></div>
+  <div class="large-12 columns heading-content">
+    <h1>Similar Products</h1>
+  </div> -->
+  <!-- <div class=" row related-products">
+    {% for project in site.posts %}
+    {% if project.layout == "project-detail-layout" %}
+    <div class="small-12 large-4 columns">
+      <div>
+        <a href="{{ site.baseurl }}{{project.permalink }}"><img src="{{ site.baseurl }}/images/{{ project.thumbnail }}" alt=""></a>
+      </div>
+      <div>
+        <h3>{{ project.title }}</h3>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div> -->
+</section>

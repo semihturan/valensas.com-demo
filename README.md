@@ -1,3 +1,0 @@
-# valensas-demo
-demo webpage
-.
