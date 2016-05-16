@@ -366,127 +366,24 @@ p {
 
 // Portfolio Slider
 
-.portfolio-section {
-  padding-top: 2em;
-}
-
-@mixin center-vertically($pseudo-el: 'before') {
-    position: relative;
-
-    &:#{$pseudo-el} {
-        content: '';
-        position: relative;
-        height: 100%;
-        width: 0;
-    }
-
-    &:#{$pseudo-el},
-    > * {
-        vertical-align: middle;
-        display: inline-block;
-    }
-}
-
-@mixin justify($vertical-align: top, $childs: '*') {
-  text-align: justify;
-  text-justify: distribute-all-lines;
-  line-height: 0;
-
-  // clear inline-block spacing
-  letter-spacing: -0.31em;
-
-  &:after {
-    content: '.';
-    display: inline-block;
-    height: 0!important;
-    width: 100%;
-    overflow: hidden!important;
-    visibility: hidden;
-    font-size: 0;
-    word-spacing: 100%;
-  }
-
-  > #{unquote($childs)} {
-    display: inline-block;
-    vertical-align: $vertical-align;
-    text-align: left;
-    line-height: 1;
-
-    // reset `inline-block spacing` trick
-    letter-spacing: 0;
-  }
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
-
-@mixin animation($args...) {
-  -webkit-animation: $args;
-  -moz-animation: $args;
-  animation: $args;
-}
-
-@mixin transform($args...) {
-  -webkit-transform: $args;
-  -moz-transform: $args;
-  transform: $args;
-}
-
-// MARQUEE
-
-@include keyframes(loop) {
-  0%   {
-    @include transform( translateX(0) );
-  }
-  100% {
-    @include transform( translateX(-(33.3% * 2)));
-  }
+.portfolio-section .row {
+    height:240px;
 }
 
 .portfolio-slider  {
-  position: relative;
+  height:240px;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
 
-  > ul {
+  ul {
     list-style: none;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 300%!important;
-    height:300px;
-     @include transform(translate3d(0, 0, 0));
-     @include animation(loop 50s linear infinite);
   }
 
-  // > ul:hover {
-  //   -moz-animation-play-state:paused;
-  //   -webkit-animation-play-state:paused;
-  //   animation-play-state:paused;
-  // }
-
-  > ul > li {
-    @include center-vertically();
-    @include justify(middle);
-
+  li {
+    list-style: none;
     float: left;
-    width: 33.333333%;
-    height:200px;
-    overflow: hidden;
 
     img {
-      margin: 20px 1.6%;
-      height: 200px;
       width: 200px;
     }
   }

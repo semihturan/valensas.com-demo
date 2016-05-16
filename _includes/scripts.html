@@ -21,6 +21,7 @@ $('#hidereveal').click(function() {
 <script src="{{site.baseurl }}/js/flickity.pkgd.min.js" type="text/javascript"></script>
 <script src="{{site.baseurl }}/js/modaal.min.js" type="text/javascript"></script>
 <script src="{{site.baseurl }}/js/jquery.dotdotdot.min.js" type="text/javascript"></script>
+<script src="{{site.baseurl }}/js/jquery.marquee.js" type="text/javascript"></script>
 
 <script>
 $('#gallery').flickity();
@@ -58,5 +59,31 @@ $( document).ready(function() {
 $( ".animated" ).fadeIn( "slow", function() {
   // Animation complete
 });
+});
+</script>
+
+<script type="text/javascript">
+$('ul.portfolio-slider').marquee({
+// enable the plugin
+enable : true,  //plug-in is enabled
+// scroll direction
+// 'vertical' or 'horizontal'
+direction: 'horizontal',
+
+// children items
+itemSelecter : 'li',
+
+// animation delay
+delay: 0,
+
+// animation speed
+speed: 3,
+
+// animation timing
+timing: 1,
+
+// mouse hover to stop the scroller
+mouse: false
+
 });
 </script>
