@@ -5643,11 +5643,15 @@ p {
   height: 60px; }
 
 .sticky-navigation {
+  -webkit-transform: translateZ(0);
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background: #fff;
   height: 60px;
   width: 100%;
-  position: fixed;
   z-index: 888;
+  position: fixed;
   top: 0;
   border-bottom: 1px solid rgba(47, 107, 193, 0.2); }
   .sticky-navigation > .title-bar {
@@ -5700,6 +5704,8 @@ p {
   .dropdown a {
     font-size: 18px;
     color: #95A5A5; }
+  .dropdown .active {
+    color: #2F6BC1; }
 
 @media (max-width: 1128px) {
   .dropdown {
@@ -6256,6 +6262,32 @@ p {
   padding: 2em 3em; }
   .project-detail-section .related-products div {
     padding: 0 0 1em 0; }
+
+.contact-section .map {
+  height: 600px; }
+.contact-section .info {
+  padding: 3em 0; }
+  .contact-section .info h3 {
+    padding: 1em 0;
+    color: #2F6BC1; }
+.contact-section .columns {
+  min-height: 240px;
+  max-height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  border-left: 1px solid rgba(47, 107, 193, 0.2); }
+.contact-section .columns:first-child {
+  border-left: none; }
+@media screen and (max-width: 639px) {
+  .contact-section .info {
+    padding: 1em 3em; }
+  .contact-section .columns {
+    height: 200px;
+    cursor: pointer;
+    border-left: none;
+    border-bottom: 1px solid rgba(47, 107, 193, 0.2); }
+  .contact-section .columns:last-child {
+    border-bottom: none; } }
 
 .heading-content {
   text-align: center;

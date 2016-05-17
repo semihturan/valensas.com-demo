@@ -33,8 +33,12 @@
         <div class="top-bar-right">
           <ul class="dropdown menu" data-dropdown-menu>
             {% for my_page in site.pages %}
-              {% if my_page.title %}
-                <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% if my_page.title %}
+              {% if page.title == my_page.title %}
+                <li><a href="{{my_page.url}}" class="active">{{my_page.title}}</a></li>
+              {% else %}
+                <li><a href="{{my_page.url}}">{{my_page.title}}</a></li>
+              {% endif %}
               {% endif %}
             {% endfor %}
           </ul>

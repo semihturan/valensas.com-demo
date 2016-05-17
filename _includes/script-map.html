@@ -1,0 +1,128 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo9k08gLsZtg2CETbUY8rtv5rxhaX-SBY&callback=initMap"  async defer></script>
+<script>
+//Define variables
+var map;
+var istanbulRd = {lat: 41.108387, lng: 29.033518};
+var istanbulHead = {lat: 41.109858, lng: 29.019570};
+var newYork = {lat: 40.755085, lng: -73.975228};
+var image = '{{site.baseurl }}/images/valensas-icon.svg';
+// Call function
+function initMap() {
+  // Custom map style and options
+  var styles = [
+    {
+      stylers: [
+        { hue: "#2F6BC1" },
+        { saturation: -100 },
+        { "lightness": -8 },
+        { "gamma": 1.18 }
+      ]
+    }
+  ];
+  var styledMap = new google.maps.StyledMapType(styles, {
+    name: "Valensas"
+  });
+  var mapOptions = {
+    zoom: 3,
+    disableDefaultUI: true,
+    center: istanbulRd,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+
+  // Associate map with styled map
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+
+  //Add location markers
+  var marker1 = new google.maps.Marker({
+    position: istanbulHead,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: image,
+    title: 'Istanbul Head Office'
+  });
+
+  var marker2 = new google.maps.Marker({
+    position: istanbulRd,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: image,
+    title: 'Istanbul R&D'
+  });
+
+  var marker3 = new google.maps.Marker({
+    position: newYork,
+    map: map,
+    animation: google.maps.Animation.DROP,
+    icon: image,
+    title: 'New York Office'
+  });
+
+  // Click to center and zoom to location
+  google.maps.event.addListener(marker1, 'click', function () {
+    map.panTo(marker1.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+  google.maps.event.addListener(marker2, 'click', function () {
+    map.panTo(marker2.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+  google.maps.event.addListener(marker3, 'click', function () {
+    map.panTo(marker3.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+
+  var center = map.getCenter();
+  google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(center);
+  });
+
+  $('#location1').click(function () {
+    map.panTo(marker1.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+  $('#location2').click(function () {
+    map.panTo(marker2.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+  $('#location3').click(function () {
+    map.panTo(marker3.getPosition());
+    smoothZoom(map, 15, map.getZoom());
+  });
+
+
+  function smoothZoom (map, max, cnt) {
+    if (cnt >= max) {
+      return;
+    } else {
+      z = google.maps.event.addListener(map, 'zoom_changed', function(event){
+      google.maps.event.removeListener(z);
+      smoothZoom(map, max, cnt + 1);
+      });
+      setTimeout(function(){map.setZoom(cnt)}, 100); // 80ms is what I found to work well on my system -- it might not work well on all systems
+    }
+  }
+
+// Drop effect
+  function toggleBounce() {
+    if (marker1.getAnimation() !== null) {
+      marker1.setAnimation(null);
+    } else {
+      marker1.setAnimation(google.maps.Animation.BOUNCE);
+    }
+    if (marker2.getAnimation() !== null) {
+      marker2.setAnimation(null);
+    } else {
+      marker2.setAnimation(google.maps.Animation.BOUNCE);
+    }
+    if (marker3.getAnimation() !== null) {
+      marker3.setAnimation(null);
+    } else {
+      marker3.setAnimation(google.maps.Animation.BOUNCE);
+    }
+  }
+}
+</script>

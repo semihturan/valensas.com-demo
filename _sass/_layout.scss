@@ -72,12 +72,17 @@ p {
 }
 
 .sticky-navigation {
+-webkit-transform: translateZ(0);
+-moz-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+
   background: $white-color;
   height:60px;
   width: 100%;
-  position: fixed;
   z-index: 888;
-  top:0;
+  position: fixed;
+  top: 0;
   border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
 
   > .title-bar {
@@ -140,6 +145,10 @@ p {
   a{
     font-size: 18px;
     color:$grey-color-light;
+  }
+
+  .active {
+    color:$blue-color;
   }
 }
 
@@ -985,6 +994,45 @@ p {
   }
 }
 
+//Contact
+
+.contact-section{
+  .map{
+    height: 600px;
+  }
+  .info{
+    padding: 3em 0;
+    h3 {
+      padding: 1em 0;
+      color: $blue-color;
+    }
+  }
+  .columns{
+    min-height: 240px;
+    max-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-left: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+  }
+  .columns:first-child{
+    border-left: none;
+  }
+
+  @include media-query($on-palm) {
+    .info {
+      padding: 1em 3em;
+    }
+    .columns{
+      height:200px;
+      cursor: pointer;
+      border-left: none;
+      border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+    }
+    .columns:last-child{
+      border-bottom: none;
+    }
+  }
+}
 // Common Elements - overwrite div rules
 
 .heading-content {
