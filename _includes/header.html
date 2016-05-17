@@ -2,21 +2,21 @@
   <!-- Responsive Top Bar with logo and hamburger-menu-->
   <div class="title-bar hide-for-medium">
     <div class="title-bar-left">
-      <a href="{{site.baseurl }}/" ><img class="header-logo-small"  alt=""></a>
+      <a href="{{site.baseurl }}/" ><img src="{{site.baseurl }}/images/valensas-logo-small.svg" class="header-logo-small"  alt=""></a>
     </div>
     <div class="title-bar-right">
       <button class="menu-icon dark" type="button" id="hidereveal"></button>
     </div>
   </div>
   <!-- Custom hamburger menu  -->
-  <div id="custom-hamburger" class="hamburger-menu hide-for-medium">
+  <div id="custom-hamburger" class="hamburger-menu hide-for-medium line">
     <div class="column row">
       <div class="large-12 columns">
         <ul class="menu vertical">
           {% for my_page in site.pages %}
             {% if my_page.title %}
               <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-              <hr class="hr-line"/>
+              <div class="line"></div>
             {% endif %}
           {% endfor %}
         </ul>
@@ -27,7 +27,7 @@
   <div class="show-for-medium">
     <div class="column row top-bar-custom-container">
       <div class="large-4 medium-4 columns transparent">
-        <a href="{{site.baseurl }}/" ><img class="header-logo-large" alt="Valensas"></a>
+        <a href="{{site.baseurl }}/" ><img src="{{site.baseurl }}/images/valensas-logo.svg" class="header-logo-large" alt="Valensas"></a>
       </div>
       <div class="large-8 medium-8 small-12 columns top-bar end">
         <div class="top-bar-right">
@@ -43,49 +43,3 @@
     </div>
   </div>
 </header>
-
-
-<!-- Experimental features -->
-<!-- Sticky Topbar with Foundation JS-->
-<!-- <div data-sticky-container class="hide-for-small-only">
-  <div class="column row sticky" style="background-color:#fff;" data-sticky data-options="marginTop:0;" data-stick-to="top">
-    <div class="large-2 large-offset-2 medium-3 medium-offset-1 columns" style="background-color:#fff;">
-      <a href="{{site.baseurl }}/" ><img src="{{site.baseurl }}/images/valensas.png" alt=""></a>
-    </div>
-    <div class="large-6 medium-7 small-12 columns top-bar end" id="topBar" style="background-color:#fff;">
-      <div class="top-bar-right">
-        <ul class="dropdown menu" style="background-color:#fff;" data-dropdown-menu>
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-              <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- Responsive Toggle with Foundation JS-->
-<!-- <header class="sticky-navigation row">
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-    <button class="menu-icon dark" type="button" data-toggle></button>
-    <div class="title-bar-left">
-      <a href="{{site.baseurl }}/" ><img class="header-logo-small"  alt="Valensas"></a>
-    </div>
-  </div>
-  <div class="large-12 columns top-bar top-bar-custom-container" id="example-menu">
-    <div class="top-bar-left show-for-medium">
-      <a href="{{site.baseurl }}/" ><img class="header-logo-large" alt="Valensas"></a>
-    </div>
-    <div class="top-bar-right">
-      <ul class="dropdown menu"data-dropdown-menu>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</header> -->

@@ -58,13 +58,8 @@ $grey-color-ultralight: #EDF1F1;
 $grey-color-light: #95A5A5;
 $grey-color-dark:  #33495D;
 $jobs-color: #FF7979;
+$jobs-secondary-color: #FF5050;
 
-$logo-header: url("{{site.baseurl }}/images/valensas.svg");
-$logo-footer: url("{{site.baseurl }}/images/valensas-white.svg");
-$arrow-black-left: url("{{site.baseurl }}/images/arrow-black-l.svg");
-$arrow-black-right: url("{{site.baseurl }}/images/arrow-black-r.svg");
-$arrow-white-left: url("{{site.baseurl }}/images/arrow-white-l.svg");
-$arrow-white-right: url("{{site.baseurl }}/images/arrow-white-r.svg");
 $apostrophe-left: url("{{site.baseurl }}/images/apostrophe-l.svg");
 $apostrophe-right: url("{{site.baseurl }}/images/apostrophe-r.svg");
 
@@ -86,6 +81,14 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .draw-border  {

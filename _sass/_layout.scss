@@ -1,9 +1,11 @@
-h1,h2,h3,h4,h5,h6,a,ul,li {
+  h1,h2,h3,h4,h5,h6,a,ul,li {
   font-family: $base-font-family;
 }
 
 body{
   background-color: $white-color;
+  perspective: 1px;
+transform-style: preserve-3d;
 }
 
 h3 {
@@ -21,6 +23,7 @@ p {
     color: $grey-color-light;
 }
 
+// Common Elements - do not overwrite div rules
 
 .gallery-cell {
   width: 100%;
@@ -28,15 +31,17 @@ p {
   margin-right: 10px;
 
   @include media-query($on-palm) {
-    height: 440px;
+    height: 340px;
     }
 }
 
 
-// Fullpage for adjusting top-bar
+// Fullpage for adjusting sticky top-bar
 
 .fullpage {
   margin-top: 60px;
+  vertical-align: top;
+  display: inline-block;
 }
 /*full width container*/
 @media (max-width: 767px) {
@@ -56,15 +61,14 @@ p {
 }
 
 .header-logo-large {
-  margin-top: -20px;
-  height:100px;
-  content: $logo-header;
+  // @include vertical-align();
+  height: 60px;
 }
 
 .header-logo-small {
-  margin-top: -8px;
-  height:60px;
-  content: $logo-header;
+  // @include vertical-align();
+  top:0;
+  height: 60px;
 }
 
 .sticky-navigation {
@@ -78,7 +82,7 @@ p {
 
   > .title-bar {
     height:60px;
-      border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+    border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
   }
 }
 
@@ -95,7 +99,7 @@ p {
   top:60px;
   text-align: right;
   position: fixed;
-  z-index: 9999;
+  z-index: 888;
   max-height:420px;
   width: 100%;
   // right: -1.2em;
@@ -107,14 +111,6 @@ p {
   a:hover{
     color:$blue-color;
   }
-
-  .hr-line {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
-    padding: 0;
-  }
 }
 
 .title-bar{
@@ -125,19 +121,22 @@ p {
     vertical-align: bottom;
     height:32px;
   }
-
   .menu-icon.dark::after{
     left:auto;
     top: auto;
   }
-  .title-bar-title {
-    float:left;
+
+  .title-bar-left{
+    @include vertical-align();
   }
+}
+
+.top-bar {
+    height: 60px;
 }
 
 .dropdown{
   text-align: right;
-  display: block;
   a{
     font-size: 18px;
     color:$grey-color-light;
@@ -147,7 +146,6 @@ p {
 @media (max-width: 1128px) {
   .dropdown {
     text-align:center;
-    display: block;
     a{
       font-size: $small-font-size;
     }
@@ -157,7 +155,6 @@ p {
 // Carousel
 
 .carousel-section {
-
   .gallery {
       display: none;
   }
@@ -171,9 +168,12 @@ p {
     transform: translateY(30%);
     // left: 0%;
     // transform: translate(-50%, 0%);
-    text-align: right;
+    text-align: center;
     font-size: $large-font-size;
     color: $white-color;
+    .text {
+      text-align: right;
+    }
   }
 
   .carousel-background {
@@ -183,14 +183,19 @@ p {
   }
 
   @include media-query($on-palm) {
-    height: 440px;
+    height: 340px;
     .carousel-content {
-      height: 440px;
-      text-align: center;
-      transform: translateY(5%);
+      img{
+        width: 66%;
+        height: 66%;
+      }
+      .text {
+        text-align: center;
+      }
+      transform: translateY(10%);
     }
     .carousel-background {
-      height: 440px;
+      height: 340px;
       width:100%;
       background-size: cover;
     }
@@ -209,27 +214,7 @@ p {
     color:$white-color;
     overflow:visible;
     max-height: 300px;
-    // padding-bottom: 2em;
-  }
-}
-
-.navbar {
-  // display:inline-grid;
-  // vertical-align: middle;
-  .table-cell {
-      text-align:center;
-      width:40em;
-  }
-
-  font-family: $base-font-family;
-    .page-link {
-      color: $grey-color-dark;
-      &:hover{
-        color: $brand-color;
-      }
-      &:active{
-        color: $white-color;
-      }
+    padding-bottom: 2em;
   }
 }
 
@@ -252,7 +237,7 @@ p {
 // Quote
 
 .quote-section {
-  padding: 2em;
+  padding: 4em;
   .heading-content {
     padding: 0;
   }
@@ -301,7 +286,7 @@ p {
 }
 
 .circles .read-more {
-  padding-top: 1em;
+  vertical-align: bottom;
   > a {
     font-size: $small-font-size;
     color:$blue-color;
@@ -392,14 +377,24 @@ p {
 // Jobs
 
 .jobs-section {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  width: 100%;
+  height:100px;
   background-color:$jobs-color;
   font-size: $medium-font-size;
   text-align: center;
   text-transform: uppercase;
   color:$white-color;
   cursor: pointer;
+  .row {
+    @include vertical-align();
+  }
+}
+
+.jobs-section:hover{
+  // font-size: $large-font-size;
+  background-color:$jobs-secondary-color;
+  color:$grey-color-ultralight;
+  font-size: $large-font-size;
 }
 
 // Footer
@@ -413,7 +408,6 @@ p {
 .footer-logo {
   margin-top: -16px;
   height:60px;
-  content: $logo-footer;
 }
 
 .footer-description-title {
@@ -991,7 +985,7 @@ p {
   }
 }
 
-// Common Elements
+// Common Elements - overwrite div rules
 
 .heading-content {
   text-align: center;
