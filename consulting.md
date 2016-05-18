@@ -1,7 +1,12 @@
 ---
 layout: services-layout
 permalink: /consulting.html
-data: consulting
+banner-type: noimg
+banner-title: Consulting
+banner-title-color: green
+banner-description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+banner-description-color: '#993322'
+banner-background: sample2.jpg
 ---
 ## Praesent commodo cursus magna ##
 

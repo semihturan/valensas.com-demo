@@ -8,29 +8,21 @@
     <div class="small-4 small-offset-0 medium-3 medium-offset-1 large-2 large-offset-0 columns">
       <h6>About</h6>
       <ul>
-        <li>
-            <a href="#">History</a>
-        </li>
-        <li>
-            <a href="#">Blog</a>
-        </li>
-        <li>
-            <a href="#">Team</a>
-        </li>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
     <div class="small-4 medium-3 large-2 columns">
-      <h6>Media</h6>
+      <h6>Terms</h6>
       <ul>
-        <li>
-          <a href="#">Press</a>
-      </li>
-      <li>
-          <a href="#">Awards</a>
-      </li>
-      <li>
-          <a href="#">Events</a>
-        </li>
+        {% for my_page in site.pages %}
+          {% if my_page.term %}
+            <li><a href="{{ my_page.permalink | prepend: site.baseurl }}"> {{ my_page.term }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
     <div class="small-4 medium-3 end large-2 columns end">

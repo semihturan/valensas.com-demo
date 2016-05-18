@@ -7,7 +7,7 @@
  *   https://github.com/repar
  *
  * usage as:
- * m1. $.fn.pluginName({...}); 
+ * m1. $.fn.pluginName({...});
  * m2. $(...).pluginName({...});
  *
  * author: repar
@@ -39,7 +39,7 @@
         this._name = pluginName;
         this.version = 'v1.0.0';
 
-        
+
         this.$element = $(this.element);
         this.$wrapper = this.$element.parent();
         this.$items = this.$element.children(this.settings.itemSelecter);
@@ -65,12 +65,12 @@
 
             $.each(this.$items, function(index, element){
 
-                totalSize += that.isHorizontal() 
+                totalSize += that.isHorizontal()
                             ? parseInt($(element).outerWidth())
                             : parseInt($(element).outerHeight());
 
-            }); 
-            
+            });
+
             //父节点实际高度
             var elmentTotalSize = this.isHorizontal()
                ? this.$element.outerWidth
@@ -81,7 +81,7 @@
 
             //设置动画渲染所需的CSS样式.
             this.$wrapper.css({
-                 
+
                 position : 'relative',
                 overflow : 'hidden'
 
@@ -107,7 +107,7 @@
 
             this.timer(this);
 
-            
+
        },
 
        /**
@@ -131,11 +131,11 @@
             var target = 0;
 
             for(var i = 0; i <= this.next; i++){
-                 
+
                  target -= this.isHorizontal()
                     ? parseInt($(this.$items.get(this.next)).outerWidth())
                     : parseInt($(this.$items.get(this.next)).outerHeight());
-                    
+
 
             }
 
@@ -152,13 +152,13 @@
 
             var present =  parseInt(this.$element.css(mark));
 
-  
+
             if(present > target)
             {
                 if(present - this.settings.speed <= target)
                 {
                      this.$element.css(mark, target);
-                
+
                 }else
 
                      this.$element.css(mark, present - this.settings.speed);
@@ -169,14 +169,14 @@
                 this.clearInterval();
 
                 if(this.next + 1 < this.$items.length){
-                     
+
                      this.next++;
-                    
+
                 }else{
 
                     this.next = 0;
                     this.$element.css(mark,0);
-                    
+
                 }
                 this.timer(this);
             }
@@ -203,7 +203,7 @@
          * 取消时钟队列.
          */
         clearTimeout : function(){
-            
+
             clearTimeout(this.timeoutHandle);
         },
 
@@ -211,10 +211,10 @@
          * 取消定时器队列.
          */
         clearInterval : function(){
-            
+
             clearInterval(this.intervalHandle);
         },
-        
+
         /**
          * 暂停动画渲染.
          * @return {[type]} [description]
@@ -223,7 +223,7 @@
 
             this.$wrapper
               .mouseenter(function(){
-                   
+
                    that.clearInterval()
                    that.clearTimeout();
 
@@ -238,7 +238,7 @@
 
 
     }//prototype
-    
+
 
     $.fn[pluginName] = function(options) {
 
@@ -252,4 +252,3 @@
     };
 
 })(jQuery, window, document);
-

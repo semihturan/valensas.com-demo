@@ -1,11 +1,16 @@
 ---
 layout: services-layout
 permalink: /mobile.html
-data: mobile
+banner-type: noimg
+banner-title: Mobile App Development
+banner-title-color: yellow
+banner-description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+banner-description-color: '#FF4400'
+banner-background: sample2.jpg
 ---
 ## Praesent commodo cursus magna ##
 
-Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
+Nullam id dolor dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.
 

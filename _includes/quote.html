@@ -2,11 +2,7 @@
   <div class="row">
     <div class="large-12 large-centered columns heading-content">
       <div class="start-quote"></div>
-      {% for data in site.data[page.data] %}
-      {% if data.quote %}
-      <h2>{{ data.quote }}</h2>
-      {% endif %}
-      {% endfor %}
+      <h2>{{ page.quote }}</h2>
       <div class="end-quote"></div>
     </div>
   </div>

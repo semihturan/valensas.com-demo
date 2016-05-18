@@ -19,16 +19,3 @@
 - title: Video & Audio Streaming
   description: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.
   img: ipad.png
-
-# Banner
-- banner-type: noimg
-  banner-title: Enterprise Solutions
-  banner-title-color: purple
-  banner-subtitle: We are here to help!
-  banner-subtitle-color: orange
-  banner-description: Withdraw money using your smartphone, thanks to iBeacon technology.
-  banner-description-color: yellow
-  banner-background: sample3.jpg
-
-#Quote
-- quote: Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.

@@ -1,14 +1,17 @@
 <script src="{{site.baseurl }}/js/jquery.dotdotdot.min.js" type="text/javascript"></script>
 <script>
-$(document).ready(function() {
+function resizeText() {
   $("div.ellipsis-text").dotdotdot({
     after: 'a.more',
-    callback: dotdotdotCallback
+    // callback: dotdotdotCallback
   });
-  function dotdotdotCallback(isTruncated, originalContent) {
-    if (!isTruncated) {
-     $("a", this).remove();
-    }
+}
+function dotdotdotCallback(isTruncated, originalContent) {
+  if (!isTruncated) {
+   $("a", this).remove();
   }
-});
+}
+
+$(document).ready(resizeText);
+window.addEventListener('resize',resizeText);
 </script>

@@ -1,7 +1,12 @@
 ---
 layout: services-layout
 permalink: /reserved.html
-data: reserved
+banner-type: noimg
+banner-title: RESERVED
+banner-title-color: red
+banner-description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+banner-description-color: '#22FF66'
+banner-background: sample2.jpg
 ---
 ## Praesent commodo cursus magna ##
 

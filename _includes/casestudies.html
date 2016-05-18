@@ -2,7 +2,24 @@
   <div class="row expanded section-header heading-content">
     <h1>Case Studies</h1>
   </div>
-  <div class="gallery js-flickity carousel-gradient-background" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": true,"arrowShape": "M54.1,99.2L56.3,97.2L10.2,51C9.8,50.3 9.8,49.7 10.2,49L56.4,2.8L54.2,0.8C53.8,0.1 52.9,0.1 52.4,0.8L3.9,49C3.5,49.7 3.5,50.3 3.9,51L52.3,99.2C52.8,99.9 53.7,99.9 54.1,99.2L54.1,99.2z"}'>
+  <div class="gallery js-flickity carousel-gradient-background show-for-medium" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": true,"arrowShape": "M54.1,99.2L56.3,97.2L10.2,51C9.8,50.3 9.8,49.7 10.2,49L56.4,2.8L54.2,0.8C53.8,0.1 52.9,0.1 52.4,0.8L3.9,49C3.5,49.7 3.5,50.3 3.9,51L52.3,99.2C52.8,99.9 53.7,99.9 54.1,99.2L54.1,99.2z"}'>
+    {% for casestudy in site.data.casestudies %}
+    <div class="gallery-cell row expanded">
+      <div class="carousel-content">
+        <div class="small-12 medium-5 large-4 large-offset-2 columns">
+            <h3>{{casestudy.title}}</h3>
+            <h6 class="show-for-medium">{{casestudy.description}}</h6>
+        </div>
+        <div class="medium-6 large-4 columns end image">
+          <img class="mobile-screen-img" src="{{site.baseurl }}/images/{{ casestudy.img }}" alt="{{ casestudy.title }}">
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+  <div class="gallery js-flickity carousel-gradient-background hide-for-medium" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false,"arrowShape": "M54.1,99.2L56.3,97.2L10.2,51C9.8,50.3 9.8,49.7 10.2,49L56.4,2.8L54.2,0.8C53.8,0.1 52.9,0.1 52.4,0.8L3.9,49C3.5,49.7 3.5,50.3 3.9,51L52.3,99.2C52.8,99.9 53.7,99.9 54.1,99.2L54.1,99.2z"}'>
     {% for casestudy in site.data.casestudies %}
     <div class="gallery-cell row expanded">
       <div class="carousel-content">
@@ -10,7 +27,7 @@
             <h3>{{casestudy.title}}</h3>
             <h6 class="show-for-medium">{{casestudy.description}}</h6>
         </div>
-        <div class="small-8 medium-6 large-4 small-offset-2 medium-uncentered large-uncentered columns end">
+        <div class="small-10 small-centered end image">
           <img class="mobile-screen-img" src="{{site.baseurl }}/images/{{ casestudy.img }}" alt="{{ casestudy.title }}">
         </div>
       </div>
