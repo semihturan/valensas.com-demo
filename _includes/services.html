@@ -8,13 +8,13 @@
     </div>
   </div>
   <div class="column row circles">
-        {% for circle in site.data.circles %}
+        {% for circle in site.data.services %}
         <div class="small-12 medium-4 large-4 columns end">
           <div class="photo"><img src="{{site.baseurl }}/images/{{ circle.img }}" alt=""></div>
           <div class="info">
             <div class="title">{{circle.title}}</div>
             <div>{{circle.description}}</div>
-            <div class="read-more"><a href="{{site.baseurl }}/{{circle.page}}">Read More</a></div>
+            <div class="read-more"><a href="{{site.baseurl }}/{{circle.permalink}}">Read More</a></div>
           </div>
         </div>
         {% endfor %}

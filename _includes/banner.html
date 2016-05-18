@@ -1,11 +1,12 @@
 <section class="fullpage">  </section>
-{% for data in site.data[page.data] %}
+{% assign page = [page.data] %}
+{% for data in page %}
 {% if data.banner-type %}
 <section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ data.banner-background }}") no-repeat;  background-size: cover;'>
 {% endif %}
 {% endfor %}
   <div class="row content animated">
-    {% for data in site.data[page.data] %}
+    {% for data in page %}
     {% if data.banner-type %}
     {% if data.banner-type == "left" %}
     <div class="small-6 medium-6 large-6 columns left-image">

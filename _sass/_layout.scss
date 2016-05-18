@@ -8,6 +8,18 @@ body{
 transform-style: preserve-3d;
 }
 
+h1 {
+  font-size: $giant-font-size;
+  color: $grey-color-dark;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: $xlarge-font-size;
+  color: $blue-color;
+  font-weight: 300;
+}
+
 h3 {
   font-size: $large-font-size;
   color: $grey-color-dark;
@@ -18,7 +30,7 @@ h6 {
   color: $grey-color-dark;
 }
 
-p {
+p,ul,li {
     font-size: $small-font-size;
     color: $grey-color-light;
 }
@@ -455,104 +467,6 @@ backface-visibility: hidden;
 }
 
 
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color-dark;
-    font-weight: bold;
-}
-
-.post-link {
-    display: block;
-    font-size: $large-font-size;
-}
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: $medium-font-size;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}
-
-.grid-view {
-  * {
-      box-sizing: border-box;
-  }
-  .header {
-      border: 1px solid red;
-      padding: 15px;
-  }
-  .menu {
-      width: 25%;
-      float: left;
-      padding: 15px;
-  }
-  .main {
-      width: 75%;
-      float: left;
-      padding: 15px;
-      border: 1px solid red;
-  }
-}
-
-
 /* ---- Flickity carousel custom settings ---- */
 
 .flickity-prev-next-button {
@@ -598,24 +512,22 @@ backface-visibility: hidden;
   }
 
   h1 {
-    font-size: $giant-font-size;
     position: relative;
-    color:$white-color;
+    color:$white-color;  //default color is white
     font-weight: 600;
     padding-bottom: 0.5em;
   }
 
   h2 {
-    font-size: $large-font-size;
     position: relative;
-    color:$white-color;
+    color:$white-color; //default color is white
     font-weight: 500;
     padding-bottom: 1em;
   }
 
   h3 {
     font-size: $medium-font-size;
-    color:$white-color;
+    color:$white-color;  //default color is white
     overflow:visible;
     max-height: 300px;
     // padding-bottom: 2em;
@@ -1033,6 +945,19 @@ backface-visibility: hidden;
     }
   }
 }
+
+// Text section
+
+.text-section {
+  padding: 3em;
+  text-align: justify;
+
+  li {
+    list-style:square;
+  }
+}
+
+
 // Common Elements - overwrite div rules
 
 .heading-content {
@@ -1040,19 +965,14 @@ backface-visibility: hidden;
   padding: 2em 0;
   h1 {
     color:$blue-color;
-    font-size: $giant-font-size;
-    font-weight: lighter;
   }
   h2 {
-    font-size: $xlarge-font-size;
-    font-weight: 300;
     color:$grey-color;
   }
 
   @include media-query($on-palm) {
     padding: 0.5em 0;
     h1 {
-      color:$blue-color;
       font-size: $xlarge-font-size;
     }
     h2 {
