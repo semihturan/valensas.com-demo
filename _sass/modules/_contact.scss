@@ -1,0 +1,49 @@
+.contact-section{
+  .map{
+    height: 600px;
+  }
+  .info{
+    padding: 1em 0;
+    h3 {
+      padding: 1em 0 0 0;
+      color: $blue-color;
+    }
+    .columns:hover{
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+  .columns{
+    min-height: 240px;
+    max-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-left: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+  }
+  .columns:first-child{
+    border-left: none;
+  }
+  @include media-query($on-tablet) {
+    .map{
+      height: 450px;
+    }
+  }
+  @include media-query($on-palm) {
+    .map{
+      height: 300px;
+    }
+    .info {
+      padding: 1em;
+    }
+    .columns{
+      height:200px;
+      cursor: pointer;
+      border-left: none;
+      border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+    }
+    .columns:last-child{
+      border-bottom: none;
+    }
+  }
+}

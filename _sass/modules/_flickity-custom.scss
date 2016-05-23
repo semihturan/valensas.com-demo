@@ -1,0 +1,22 @@
+.flickity-prev-next-button {
+  top: 40%;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: none;
+}
+
+.flickity-prev-next-button:hover {
+  background: none;
+  path {
+    fill: $blue-color;
+  }
+}
+
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  background: $grey-color-light;
+  border-radius: 50%;
+  opacity: 0.25;
+}

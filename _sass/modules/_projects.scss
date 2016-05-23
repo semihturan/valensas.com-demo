@@ -1,0 +1,58 @@
+.projects-section {
+  .column {
+    // border: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.8);
+    height: 370px;
+    padding: 0.5em;
+  }
+
+  h3{
+    color: $blue-color;
+    padding-top: 0.5em;
+  }
+
+  a {
+    color: $blue-color;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  div.ellipsis-text {
+    max-width: 300px;
+    max-height: 72px;
+  }
+
+  @include media-query($on-tablet) {
+
+    .column {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: left;
+    }
+
+    div.ellipsis-text {
+      text-align: center;
+      max-width: none;
+      text-align: left;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .column {
+      text-align: center;
+      padding: 2em;
+      padding-bottom: 3em;
+      border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+    }
+    h3 {
+      text-align: center;
+    }
+    div.ellipsis-text {
+      max-width: none;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.project-detail-section {
+  .line {
+    padding-top: 2em;
+  }
+
+  .gallery-cell {
+    height: 440px;
+  }
+  .images {
+    text-align: center;
+    img {
+      height: 440px;
+      padding: 0.5em 0;
+    }
+  }
+
+  h3 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $blue-color;
+  }
+
+  .content {
+    padding: 1em 3em;
+    .key {
+      color: $blue-color;
+    }
+    .value {
+      color: $grey-color-light;
+    }
+    .value:not(:last-child)::after {
+      content: ",";
+    }
+    .value:last-child::after {
+      content: "";
+    }
+  }
+
+  .related-products{
+    text-align: center;
+    padding: 2em 3em;
+    div {
+      padding: 0 0 1em 0;
+    }
+  }
+}

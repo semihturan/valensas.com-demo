@@ -1,0 +1,46 @@
+.footer-section {
+  background-color: $footer-color;
+  padding-top: 3.5em;
+  padding-bottom: 2em;
+  font-size: $base-font-size;
+}
+
+.footer-logo {
+  margin-top: -16px;
+  height:60px;
+}
+
+.footer-description-title {
+  padding-top: 0.3em;
+  font-size: $large-font-size;
+  color: $white-color;
+}
+.footer-description {
+  font-size: $base-font-size;
+  color: $grey-color-light;
+}
+
+.footer a:hover,.footer a:focus,.footer a.active {
+ color: $white-color;
+}
+.footer h6 {
+ margin: 0 0 1em;
+ font-size: $medium-font-size;
+ font-weight: 500;
+ line-height: 16px;
+ text-transform: none;
+ color: $white-color;
+}
+.footer a{
+  color: $grey-color-light;
+}
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: $base-font-size;
+  padding-left: 0;
+}
+.footer ul li {
+ margin-bottom: 5px;
+}

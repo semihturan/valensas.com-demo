@@ -1,0 +1,54 @@
+h1,h2,h3,h4,h5,h6,a,ul,li {
+  font-family: $base-font-family;
+}
+body {
+  background-color: $white-color;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow:auto;
+}
+h1 {
+  font-size: $giant-font-size;
+  color: $grey-color-dark;
+  font-weight: lighter;
+}
+h2 {
+  font-size: $xlarge-font-size;
+  color: $blue-color;
+  font-weight: 300;
+}
+h3 {
+  font-size: $large-font-size;
+  color: $grey-color-dark;
+}
+h6 {
+  font-size: $medium-font-size;
+  color: $grey-color-dark;
+}
+p,ul,li {
+  font-size: $small-font-size;
+  color: $grey-color-light;
+}
+.gallery-cell {
+  width: 100%;
+  height: 550px;
+  margin-right: 10px;
+
+  @include media-query($on-palm) {
+    height: 340px;
+  }
+}
+
+// Fullpage for adjusting sticky top-bar
+.fullpage {
+  margin-top: 60px;
+  vertical-align: top;
+  display: inline-block;
+}
+/*full width container*/
+@media (max-width: 767px) {
+  .fullpage {
+      margin-left:auto;
+      margin-right:auto;
+  }
+}

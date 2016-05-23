@@ -1,6 +1,6 @@
-<section class="enterprise1-section">
+<section class="enterprise-section">
   {% for solution in site.data.enterprise %}
-    {% if forloop.index == 1 %}
+    {% if solution.paragraph %}
     <div class="row content-wrapper">
       <div class="small-12 medium-6 columns informative-wrapper">
         <h3>{{solution.title}}</h3>
@@ -13,7 +13,17 @@
         <p>{{solution.paragraph}}</p>
       </div>
     </div>
-  {% endif %}
-{% endfor %}
-<div class="line"></div>
+    {% else %}
+    <div class="row content-wrapper">
+      <div class="small-12 medium-6 columns informative-wrapper">
+        <h3>{{solution.title}}</h3>
+        <p>{{solution.description}}</p>
+      </div>
+      <div class="small-12 medium-6 columns list-icon">
+        <a href="{{site.baseurl }}/images/{{solution.img}}" rel="galleryy" class="galleryy"><img  src="{{site.baseurl }}/images/{{solution.img}}"/></a>
+      </div>
+    </div>
+    {% endif %}
+    <div class="line"></div>
+  {% endfor %}
 </section>

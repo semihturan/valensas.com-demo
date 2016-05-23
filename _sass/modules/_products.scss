@@ -1,0 +1,157 @@
+.product1-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+      text-align: center;
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: right;
+    padding: 2em;
+  }
+
+  .gallery-cell {
+    height: 550px;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+    img {
+      height: 100%;
+    }
+  }
+
+  @include media-query($on-palm) {
+      padding-top: 4em;
+    .content-wrapper {
+      display:flex;
+      flex-flow: column;
+      padding-top: 0em;
+    }
+    .informative-wrapper {
+      padding: 3em 3em 0 3em;
+      order:2;
+    }
+    .informative{
+      text-align: left;
+      padding: 2em 0 0 0;
+    }
+    .gallery-wrapper {
+      order:1;
+    }
+    .gallery-cell {
+      // bottom: 1em;
+      height: 480px;
+    }
+  }
+}
+
+.product2-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+      text-align: center;
+  }
+
+  .paragraph-wrapper {
+    padding: 2em;
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: left;
+    padding: 2em;
+  }
+
+  .gallery-cell {
+    height: 300px;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+    img {
+      height: 100%;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .content-wrapper {
+      display:flex;
+      flex-flow: column;
+    }
+    .paragraph-wrapper {
+      order:2;
+      padding: 3em 3em 0 3em;
+    }
+    .informative-wrapper {
+      padding: 0 3em;
+      order:3;
+    }
+    .informative{
+      padding: 2em 0 0 0;
+    }
+    .gallery-wrapper {
+      padding-top: -2em;
+      text-align: center;
+      order:1;
+      max-height: 400px;
+      img {
+        padding: 0.8em;
+        // height: 40%;
+        // width: 40%;
+      }
+    }
+    .gallery-cell {
+      bottom: 1em;
+    }
+  }
+}
+
+.product3-section {
+
+  padding-bottom: 3em;
+
+  .list-icon {
+    text-align: right;
+    img{
+      max-height: 200px;
+    }
+  }
+
+  .informative-wrapper {
+    padding: 2em 0 2em 0;
+  }
+
+  .informative {
+    text-align: left;
+    padding: 2em;
+  }
+
+  @include media-query($on-palm) {
+    .informative-wrapper {
+      padding: 0 3em;
+    }
+    .informative{
+      padding: 2em 0;
+      display:flex;
+      flex-flow: column;
+    }
+    .list-icon {
+      text-align: center;
+      order:1;
+    }
+    .descriptive {
+      order: 2;
+      padding: 1em 0 0 0;
+    }
+  }
+}

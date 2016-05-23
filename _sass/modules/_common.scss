@@ -1,0 +1,45 @@
+.heading-content {
+  text-align: center;
+  padding: 2em 0;
+  h1 {
+    color:$blue-color;
+  }
+  h2 {
+    color:$grey-color;
+  }
+
+  @include media-query($on-palm) {
+    padding: 0.5em 0;
+    h1 {
+      font-size: $xlarge-font-size;
+    }
+    h2 {
+      font-size: $large-font-size;
+    }
+  }
+}
+
+.modaal-container {
+  background: transparent;
+}
+
+.line {
+  border-bottom: 1px solid rgba(red($blue-color), green($blue-color), blue($blue-color), 0.2);
+}
+
+.animated {
+    display: none;
+}
+
+.quote-section {
+  padding: 4em;
+  .heading-content {
+    padding: 0;
+  }
+  @include media-query($on-palm) {
+    padding: 1em;
+    h2{
+      font-size: $medium-font-size;
+    }
+  }
+}

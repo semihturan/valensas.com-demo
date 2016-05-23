@@ -1,0 +1,68 @@
+.carousel-section {
+  .gallery {
+      display: none;
+  }
+  height: 550px;
+  .carousel-content {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    transform: translateY(30%);
+    text-align: center;
+    font-size: $large-font-size;
+    color: $white-color;
+    .text {
+      text-align: right;
+    }
+  }
+  .carousel-background {
+    height: 550px;
+    width:100%;
+    background-size: cover;
+  }
+  @include media-query($on-palm) {
+    height: 340px;
+    .carousel-content {
+      img{
+        width: 66%;
+        height: 66%;
+      }
+      .text {
+        text-align: center;
+      }
+      transform: translateY(10%);
+    }
+    .carousel-background {
+      height: 340px;
+      width:100%;
+      background-size: cover;
+    }
+  }
+  h1 {
+    font-size: $giant-font-size;
+    position: relative;
+    color:$white-color;
+    font-weight: 600;
+    // padding-bottom: 1em;
+  }
+  h3 {
+    font-size: $large-font-size;
+    color:$white-color;
+    overflow:visible;
+    max-height: 300px;
+    padding-bottom: 2em;
+  }
+}
+.button.hollow {
+  color:white;
+  border-color: white;
+  transition: color 0.25s, background 0.25s;
+  &:active {
+    background: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.5);
+  }
+  &:hover{
+      color:white;
+      border-color: white;
+  }
+  font-size: 21px;
+}

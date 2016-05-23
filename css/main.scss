@@ -91,34 +91,8 @@ $on-laptop:        800px;
   transform: translateY(-50%);
 }
 
-.draw-border  {
-  > div > div,
-  > div,
-  section > div,
-  section > div > ol,
-  section > div > ol > li,
-  section > div > div,
-  section > div > div > div,
-  section > div > div > div > div,
-  section > div > div > div > div > div,
-  header > div,
-  header > div > div,
-  header > div > div > div,
-  header > div > div > div > div,
-  header > div > div > div > div > ul,
-  header > div > div > div > div > ul > li {
-    border-style: solid;border-width:2px;border-color:$grey-color-dark;
-  }
-  footer > div,
-  footer > div > div,
-  footer > div > div > *,
-  {
-    border-style: solid;border-width:2px;border-color:$white-color;
-  }
-};
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout"
+"base",
+"modules"
 ;

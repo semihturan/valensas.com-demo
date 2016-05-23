@@ -1,0 +1,23 @@
+.circles-section {
+  padding: 2em 0;
+  content-align: center;
+}
+.circles .photo {
+  margin-bottom:0;
+  text-align: center;
+}
+.circles .info {
+  text-align: center;
+  padding: 2em 0;
+  margin: 0 1.5em;
+}
+.circles .read-more {
+  vertical-align: bottom;
+  a {
+    font-size: $small-font-size;
+    color:$blue-color;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}

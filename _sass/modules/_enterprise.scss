@@ -1,0 +1,49 @@
+.enterprise-section {
+
+  .content-wrapper {
+    padding: 2em;
+  }
+
+  .informative-wrapper {
+    text-align: left;
+    h3{
+      color:$blue-color;
+    }
+  }
+  .paragraph-wrapper {
+    text-align: justify;
+    padding-top: 2em;
+  }
+
+  .list-icon {
+    text-align: right;
+    img{
+      max-height: 200px;
+    }
+  }
+
+  @include media-query($on-palm) {
+    .content-wrapper {
+      display:flex;
+      flex-flow: column;
+      padding: 3em;
+    }
+    .informative-wrapper {
+      padding-top: 2em;
+      font-weight: bold;
+      order:2;
+    }
+    .paragraph-wrapper {
+      padding-top: 1em;
+      order:3;
+    }
+
+    .list-icon {
+      order:1;
+      text-align: center;
+      img{
+        max-height: 200px;
+      }
+    }
+  }
+}
