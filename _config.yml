@@ -16,4 +16,5 @@ url: "http://www.semihturan.xyz" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-style: compressed
+sass:
+  style: compressed
