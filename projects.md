@@ -1,7 +1,7 @@
 ---
 layout: projects-layout
 title: Projects
-data: projects
+data: project
 permalink: /projects/index.html
 banner-type: noimg
 banner-title: Our Projects

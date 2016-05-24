@@ -1,4 +1,5 @@
 ---
+service: Consulting
 layout: services-layout
 permalink: /consulting.html
 banner-type: noimg

@@ -1,4 +1,5 @@
 ---
+service: Reserved
 layout: services-layout
 permalink: /reserved.html
 banner-type: noimg

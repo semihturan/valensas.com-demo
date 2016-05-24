@@ -2,28 +2,16 @@
   <div class="row expanded hide-for-small-only">
     <ul class="portfolio-slider">
       <li>
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
-        <img src="{{site.baseurl }}/images/logo-placeholder.svg">
+        {% for product in site.data.logos %}
+        <img src="../images/{{ product.img }}">
+        {% endfor %}
       </li>
     </ul>
   </div>
 
-  <!-- {% for product in site.data.products %}
-  <img src="../images/{{ product.img }}">
-  {% endfor %} -->
-
   <div class="expanded row show-for-small-only">
     <div class="large-12 columns">
-        <img src="{{site.baseurl }}/images/customer-logos.png">
+      <img src="{{site.baseurl }}/images/customer-logos.png">
     </div>
   </div>
 </section>

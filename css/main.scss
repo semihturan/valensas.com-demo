@@ -54,7 +54,7 @@ $grey-color-ultralight: #EDF1F1;
 $grey-color-light: #95A5A5;
 $grey-color-dark:  #33495D;
 $jobs-color: #FF7979;
-$jobs-secondary-color: #FF5050;
+$jobs-secondary-color: darken($jobs-color, 5%);
 
 $apostrophe-left: url("{{site.baseurl }}/images/apostrophe-l.svg");
 $apostrophe-right: url("{{site.baseurl }}/images/apostrophe-r.svg");

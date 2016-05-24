@@ -1,0 +1,16 @@
+<section class="grids-section">
+  <div class="row small-up-1 medium-up-2 large-up-3 small-uncollapse">
+    {% assign post-category = [page.data] %}
+    {% for post-category in site.documents %}
+    <div class="column">
+      <div>
+        <a class="animated" href="{{ site.baseurl }}{{post-category.permalink}}"><img src="{{ site.baseurl }}/images/{{post-category.thumbnail}}" alt=""></a>
+      </div>
+      <div>
+        <h3>{{post-category.title}}</h3>
+        <div class="ellipsis-text">{{post-category.content}}<a class='more' href='{{site.baseurl }}{{post-category.permalink}}'>More</a></div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</section>
