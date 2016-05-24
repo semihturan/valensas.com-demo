@@ -1,48 +1,40 @@
 .casestudies-section {
+  background: url("/images/sample.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 2em;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
   .gallery-cell {
     height: 420px;
   }
-
   .section-header {
-    background: $grey-color-ultralight;
+    // background: $grey-color-ultralight;
   }
-
   .carousel-content {
     text-align: right;
     position: relative;
     transform: translateY(0);
     height: 420px;
-
     img{
       height: 100%;
     }
-
     h3 {
       color:$blue-color;
     }
-
     @include media-query($on-palm) {
       height: 440px;
       text-align: center;
     }
   }
-
-  .carousel-gradient-background {
-    background: $grey-color-ultralight;
-    // background: -moz-linear-gradient(top, $grey-color-ultralight 0%, rgba(red($grey-color-ultralight), green($grey-color-ultralight), blue($grey-color-ultralight), 0.5) 60%, rgb(255, 255, 255) 100%);
-    // background: -webkit-linear-gradient(top, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
-    // background: linear-gradient(to bottom, $grey-color-ultralight 0%, $grey-color-ultralight 60%, rgb(255, 255, 255) 100%);
+  .carousel-background {
+    // background: $grey-color-ultralight;
     width:100%;
     height: 420px;
   }
-
   .image {
     height:420px;
   }
 }
-
 .mobile-screen-img {
   text-align: left;
   @include media-query($on-palm) {
