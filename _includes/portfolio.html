@@ -3,7 +3,7 @@
     <ul class="portfolio-slider">
       <li>
         {% for product in site.data.logos %}
-        <img src="../images/{{ product.img }}">
+        <img src="{{site.baseurl }}/images/{{ product.img }}">
         {% endfor %}
       </li>
     </ul>
