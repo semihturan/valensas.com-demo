@@ -1,5 +1,5 @@
 <section class="product2-section">
-  {% for product in site.data.ourproducts %}
+  {% for product in site.data[page.data] %}
     {% if forloop.index == 2 %}
   <div class="row">
     <div class="large-12 large-centered columns heading-content">

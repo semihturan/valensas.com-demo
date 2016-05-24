@@ -79,7 +79,7 @@
   .gallery-wrapper {
     text-align: center;
     img {
-      height: 100%;
+      max-height: 300px;
     }
   }
 
@@ -111,7 +111,7 @@
       }
     }
     .gallery-cell {
-      bottom: 1em;
+      max-height: 400px;
     }
   }
 }
@@ -128,7 +128,7 @@
   }
 
   .informative-wrapper {
-    padding: 2em 0 2em 0;
+    padding: 2em 0;
   }
 
   .informative {
