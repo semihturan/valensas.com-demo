@@ -7,13 +7,13 @@
   text-transform: uppercase;
   color:$white-color;
   cursor: pointer;
+  transition: all .2s ease;
   .row {
     @include vertical-align();
   }
 }
 
 .jobs-section:hover{
-  // font-size: $large-font-size;
   background-color:$jobs-secondary-color;
   color:$grey-color-ultralight;
   font-size: $large-font-size;

@@ -19,10 +19,6 @@
   font-size: $base-font-size;
   color: $grey-color-light;
 }
-
-.footer a:hover,.footer a:focus,.footer a.active {
- color: $white-color;
-}
 .footer h6 {
  margin: 0 0 1em;
  font-size: $medium-font-size;
@@ -33,6 +29,10 @@
 }
 .footer a{
   color: $grey-color-light;
+  transition: all .2s ease;
+}
+.footer a:hover,.footer a:focus,.footer a.active {
+ color: $white-color;
 }
 .footer ul {
   list-style: none;

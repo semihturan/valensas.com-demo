@@ -12,10 +12,10 @@ function initMap() {
   var styles = [
     {
       stylers: [
-        { hue: "#2F6BC1" },
-        { saturation: -100 },
-        { "lightness": -8 },
-        { "gamma": 1.18 }
+        { hue: "#2F6BC1" }
+        // { saturation: -100 },
+        // { "lightness": -8 },
+        // { "gamma": 1.18 }
       ]
     }
   ];
@@ -24,11 +24,17 @@ function initMap() {
   });
   var mapOptions = {
     zoom: 3,
-    disableDefaultUI: true,
+    // disableDefaultUI: true,
     center: istanbulRd,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-    }
+    },
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: true,
+    fullscreenControl: false
   };
 
   // Associate map with styled map
