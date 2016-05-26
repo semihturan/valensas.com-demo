@@ -1,14 +1,14 @@
 <script type="text/javascript">
-var header = $('.banner-section');
-var range = 400;
+var header = $('.opacityElement');
+var range = 200;
 
-$(window).on('scroll', function () {
+$(window).scroll(function () {
 
   var scrollTop = $(this).scrollTop();
   var offset = header.offset().top;
   var height = header.outerHeight();
   offset = offset + height;
-  var calc = 1 - (scrollTop - offset + range) / range;
+  var calc = 1 - (scrollTop - offset + range) / (2 * range);
 
   header.css({ 'opacity': calc });
 

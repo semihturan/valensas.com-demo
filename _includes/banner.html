@@ -5,33 +5,33 @@
 <section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ page.banner-background }}") no-repeat; background-size: cover; background-attachment: fixed; background-position: 50% 50%;'>
 {% endif %}
 
-  <div class="row content">
+  <div class="row content animateUp">
     {% if page.banner-type == "left" %}
     <div class="small-6 medium-6 large-6 columns left-image">
       <img src="{{site.baseurl }}/images/{{ page.banner-img }}" alt="RESERVED">
     </div>
-    <div class="small-12 medium-6 large-6 columns content-right">
+    <div class="small-12 medium-6 large-6 columns content-right opacityElement">
       <h1 style="color:{{ page.banner-title-color }};">{{ page.banner-title }}</h1>
       <h2 style="color:{{ page.banner-subtitle-color }};">{{ page.banner-subtitle }}</h2>
       <h3 class="show-for-medium" style="color:{{ page.banner-description-color }};">{{ page.banner-description }}</h3>
     </div>
-    <div class="small-6 columns end hide-for-medium content-right push-right">
+    <div class="small-6 columns end hide-for-medium content-right push-right opacityElement">
       <h3 style="color:{{ page.banner-description-color }};">{{ page.banner-description }}</h3>
     </div>
     {% elsif page.banner-type == "right" %}
-    <div class="small-12 medium-6 large-6 columns content-left">
+    <div class="small-12 medium-6 large-6 columns content-left opacityElement">
       <h1 style="color:{{ page.banner-title-color }};">{{ page.banner-title }}</h1>
       <h2 style="color:{{ page.banner-subtitle-color }};">{{ page.banner-subtitle }}</h2>
       <h3 class="show-for-medium" style="color:{{ page.banner-description-color }};">{{ page.banner-description }}</h3>
     </div>
-    <div class="small-6 columns end hide-for-medium content-left">
+    <div class="small-6 columns end hide-for-medium content-left opacityElement">
       <h3 style="color:{{ page.banner-description-color }};">{{ page.banner-description }}</h3>
     </div>
     <div class="small-6 medium-6 large-6 columns end">
       <img src="{{site.baseurl }}/images/{{ page.banner-img }}" alt="RESERVED">
     </div>
     {% else %}
-    <div class="large-12 columns content-centered content-with-no-img">
+    <div class="large-12 columns content-centered content-with-no-img opacityElement">
       <h1 style="color:{{ page.banner-title-color }};">{{ page.banner-title }}</h1>
       <h2 style="color:{{ page.banner-subtitle-color }};">{{ page.banner-subtitle }}</h2>
       <h3 style="color:{{ page.banner-description-color }};">{{ page.banner-description }}</h3>

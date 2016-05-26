@@ -1,6 +1,7 @@
 .circles-section {
   padding: 2em 0;
   content-align: center;
+  overflow: hidden;
 }
 .circles .photo {
   margin-bottom:0;
@@ -21,3 +22,7 @@
     text-decoration: underline;
   }
 }
+
+// .animateRight {
+//   transform: translatex(100%);
+// }

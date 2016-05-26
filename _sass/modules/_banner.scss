@@ -96,9 +96,9 @@
   }
   @include media-query($on-palm) {
     padding-top:2em;
-    height: 240px;
+    height: 280px;
     .content-with-no-img {
-      max-height: 200px;
+      max-height: 240px;
     }
     .content {
       text-align: left;

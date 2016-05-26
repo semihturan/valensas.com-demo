@@ -38,6 +38,6 @@
 .mobile-screen-img {
   text-align: left;
   @include media-query($on-palm) {
-    text-align: center;;
+    text-align: center;
   }
 }

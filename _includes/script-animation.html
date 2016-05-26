@@ -1,0 +1,32 @@
+<script type="text/javascript">
+$(function(){
+  var animateUp = $('.animateUp')
+  var off = animateUp.offset().top
+  animateUp.data('orig-offset', off);
+  $(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+    var off = animateUp.data('orig-offset');
+    var translate = - (scrollTop - off) / $(window).height() * 25;
+    if (scrollTop >= off) {
+      // console.log(translate);
+      animateUp.css({transform: 'translateY(' + translate +'%)'});
+    }
+  });
+});
+
+// $(function(){
+//   var animateRight = $('.animateRight')
+//   var off = animateRight.offset().top
+//   animateRight.data('orig-offset', off);
+//   $(window).scroll(function(){
+//     var scrollTop = $(window).scrollTop();
+//     var off = animateRight.data('orig-offset');
+//     var translate = - (scrollTop - off/4) / $(window).height() * 100;
+//     console.log(translate);
+//     if (translate > 0) {
+//       animateRight.css({transform: 'translateX(' + translate*4 +'%)'});
+//     }
+//   });
+// });
+
+</script>
