@@ -7,9 +7,6 @@
   .gallery-cell {
     height: 420px;
   }
-  .section-header {
-    // background: $grey-color-ultralight;
-  }
   .carousel-content {
     text-align: right;
     position: relative;
@@ -18,12 +15,8 @@
     img{
       height: 100%;
     }
-    h3 {
-      color:$blue-color;
-    }
-    @include media-query($on-palm) {
-      height: 440px;
-      text-align: center;
+    h6 {
+      color:$grey-color;
     }
   }
   .carousel-background {
@@ -33,6 +26,23 @@
   }
   .image {
     height:420px;
+  }
+  @include media-query($on-palm) {
+    &:before {
+      content: " ";
+      display: block;
+      height: 2em;
+    }
+    &:after {
+      background: #fff;
+      content: " ";
+      display: block;
+      height: 2em;
+    }
+    .carousel-content {
+      height: 440px;
+      text-align: center;
+    }
   }
 }
 .mobile-screen-img {

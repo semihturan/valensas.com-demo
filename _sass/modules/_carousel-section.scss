@@ -1,68 +1,87 @@
 .carousel-section {
-  .gallery {
-      display: none;
-  }
-  height: 550px;
+  height: 400px;
   .carousel-content {
     overflow: hidden;
     width: 100%;
     position: absolute;
     transform: translateY(30%);
     text-align: center;
-    font-size: $large-font-size;
-    color: $white-color;
     .text {
-      text-align: right;
+      text-align: left;
     }
   }
   .carousel-background {
-    height: 550px;
+    height: 400px;
     width:100%;
     background-size: cover;
   }
+
+  h1 {
+    position: relative;
+    color:$black-color;
+    font-weight: 600;
+  }
+  h3 {
+    color:$black-color;
+    overflow:visible;
+    max-height: 300px;
+    padding-bottom: 1em;
+  }
+
+  img{
+    height:256px;
+    object-fit:scale-down;
+    overflow: visible;
+  }
+
+  .small-8 {
+    overflow: visible;
+  }
+
   @include media-query($on-palm) {
     height: 340px;
     .carousel-content {
-      img{
-        width: 66%;
-        height: 66%;
-      }
       .text {
         text-align: center;
       }
-      transform: translateY(10%);
+      transform: translateY(2%);
     }
     .carousel-background {
       height: 340px;
       width:100%;
       background-size: cover;
     }
-  }
-  h1 {
-    font-size: $giant-font-size;
-    position: relative;
-    color:$white-color;
-    font-weight: 600;
-    // padding-bottom: 1em;
-  }
-  h3 {
-    font-size: $large-font-size;
-    color:$white-color;
-    overflow:visible;
-    max-height: 300px;
-    padding-bottom: 2em;
+    h1 {
+      font-size: $xlarge-font-size;
+    }
+    h3 {
+      font-size: $base-font-size;
+      padding-bottom: 0.5em;
+    }
+    img{
+      height:144px;
+      min-width: 0;
+      padding-bottom: 1em;
+    }
   }
 }
-.button.hollow {
-  color:white;
-  border-color: white;
-  transition: color 0.25s, background 0.25s;
+
+button {
+  background: transparent;
+  color: $black-color;
+  border: 1px solid $black-color;
+  border-spacing: 10px;
+  font-size: 21px;
+  height:42px;
+  width: 150px;
+  line-height:42px;
+  text-align: center;
+  transition: all .2s ease;
   &:active {
-    background: rgba(red($brand-color), green($brand-color), blue($brand-color), 0.5);
+    background: rgba(red($blue-color), green($blue-color), blue($blue-color), 0.5);
   }
   &:hover{
-      color:white;
-      border-color: white;
+      color: $blue-color;
+      border-color: $blue-color;
   }
-  font-size: 21px;
 }

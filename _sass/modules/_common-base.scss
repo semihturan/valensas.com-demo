@@ -1,16 +1,75 @@
-h1,h2,h3,h4,h5,h6,a,ul,li {
-  font-family: $base-font-family;
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
 }
+/**
+ * Basic styling
+ */
 body {
-  background-color: $white-color;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow:auto;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $grey-color-dark;
+    background-color: $white-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow:auto;
 }
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+/**
+ * Links
+ */
+a {
+    color: $blue-color;
+    text-decoration: none;
+    &:visited {
+        color: darken($blue-color, 15%);
+    }
+    &:hover {
+        color: $grey-color-dark;
+        text-decoration: none;
+    }
+}
+
 h1 {
   font-size: $giant-font-size;
-  color: $grey-color-dark;
-  font-weight: lighter;
+  font-weight: 200;
 }
 h2 {
   font-size: $xlarge-font-size;
@@ -19,19 +78,18 @@ h2 {
 }
 h3 {
   font-size: $large-font-size;
-  color: $grey-color-dark;
 }
 h6 {
   font-size: $medium-font-size;
-  color: $grey-color-dark;
 }
 p,ul,li {
   font-size: $small-font-size;
   color: $grey-color-light;
 }
+
 .gallery-cell {
   width: 100%;
-  height: 550px;
+  height: 400px;
   margin-right: 10px;
 
   @include media-query($on-palm) {

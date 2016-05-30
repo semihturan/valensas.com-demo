@@ -1,11 +1,19 @@
+- title: Yemeksepeti
+  img: yemeksepeti-banner.png
+  background: yemeksepeti-banner-background.png
+  description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus.
+
 - title: Tekfen
-  img: sample3.png
+  img: AppleTV.png
+  background: sample3.png
   description: Donec ullamcorper nulla non metus auctor fringilla.
 
 - title: Veacon
-  img: sample3.jpg
+  img: AppleTV.png
+  background: sample3.jpg
   description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
 - title: Akbank
-  img: akbank.jpg
+  img: AppleTV.png
+  background: akbank.jpg
   description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.

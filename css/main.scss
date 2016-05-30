@@ -38,22 +38,17 @@ $giant-font-size: 50px;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $base-line-height: 1.5;
-
 $spacing-unit:     30px;
 
-$text-color:       #555555;
-$background-color: #fff;
-$brand-color:      #003C6E;
-$footer-color: rgb(49, 67, 97);
-$header-color: #fff;
-
-$blue-color: #2F6BC1;
+$footer-color: rgb(49, 67, 97); //rhino
+$blue-color: #2F6BC1; // denim
 $white-color:       #fff;
-$grey-color:       #697783;
-$grey-color-ultralight: #EDF1F1;
-$grey-color-light: #95A5A5;
-$grey-color-dark:  #33495D;
-$jobs-color: #FF7979;
+$black-color: #000;
+$grey-color:       #697783; // pale sky
+$grey-color-ultralight: #EDF1F1; // athens gray
+$grey-color-light: #95A5A5; // pewter
+$grey-color-dark:  #33495D; //pickled bluewood
+$jobs-color: #FF7979; //fade-red
 $jobs-secondary-color: darken($jobs-color, 5%);
 
 $apostrophe-left: url("{{site.baseurl }}/images/apostrophe-l.svg");
@@ -90,6 +85,5 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-"base",
 "modules"
 ;
