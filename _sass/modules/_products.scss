@@ -1,9 +1,8 @@
 .product1-section {
-
   padding-bottom: 3em;
 
-  .list-icon {
-      text-align: center;
+  .list-icon-left, .list-icon-right {
+    text-align: center;
   }
 
   .informative-wrapper {
@@ -153,5 +152,58 @@
       order: 2;
       padding: 1em 0 0 0;
     }
+  }
+}
+
+.slideImageLeft {
+  animation: slideImageLeft 2s;
+}
+.slideImageRight {
+  animation: slideImageRight 2s;
+}
+.slideTextRight {
+  animation: slideTextRight 3s;
+}
+.slideTextUp {
+  animation: slideTextUp 2s;
+}
+
+@keyframes slideImageLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideImageRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideTextRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideTextUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
   }
 }

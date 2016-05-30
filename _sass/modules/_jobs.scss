@@ -14,7 +14,13 @@
 }
 
 .jobs-section:hover{
-  background-color:$jobs-secondary-color;
-  color:$grey-color-ultralight;
+  // background-color:$jobs-secondary-color;
   font-size: $large-font-size;
+  animation: pulse 2s;
+  @keyframes pulse {
+    100% {
+      background-color: $jobs-secondary-color;
+      color:$grey-color-ultralight;
+    }
+  }
 }

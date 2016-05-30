@@ -1,0 +1,29 @@
+<script src="{{site.baseurl }}/js/jquery.visible.js" type="text/javascript"></script>
+<script>
+$(window).scroll(function(event) {
+  $(".list-icon-left").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slideImageRight");
+    }
+  });
+  $(".list-icon-right").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slideImageLeft");
+    }
+  });
+  $(".info-text-left").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slideTextRight");
+    }
+  });
+  $(".info-text-middle").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("slideTextUp");
+    }
+  });
+});
+</script>
