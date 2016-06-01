@@ -1,7 +1,7 @@
 <section class="product1-section">
   {% for product in site.data[page.data] %}
     {% if forloop.index == 1 %}
-  <div class="row">
+  <div class="row slide-up">
     <div class="large-12 large-centered columns heading-content">
       <h1>{{product.title}}</h1>
       <h2>{{product.description}}</h2>
@@ -10,38 +10,38 @@
   <div class="row content-wrapper">
     <div class="small-12 medium-6 columns informative-wrapper">
 
-      <div class="row informative">
-        <div class="small-12 medium-4 columns list-icon-left show-for-medium">
+      <div class="row informative slide-right">
+        <div class="small-12 medium-4 columns list-icon show-for-medium">
           <img src="{{site.baseurl }}/images/{{product.list-1-icon}}"/>
         </div>
-        <div class="small-12 medium-8 columns info-text-left">
+        <div class="small-12 medium-8 columns">
           <h6>{{product.list-1-title}}</h6>
           <p>{{product.list-1-description}}</p>
         </div>
       </div>
 
-      <div class="row informative">
-        <div class="small-12 medium-4 columns list-icon-left show-for-medium">
+      <div class="row informative slide-right">
+        <div class="small-12 medium-4 columns list-icon show-for-medium">
           <img src="{{site.baseurl }}/images/{{product.list-2-icon}}"/>
         </div>
-        <div class="small-12 medium-8 columns info-text-left">
+        <div class="small-12 medium-8 columns">
           <h6>{{product.list-2-title}}</h6>
           <p>{{product.list-2-description}}</p>
         </div>
       </div>
 
-      <div class="row informative">
-        <div class="small-12 medium-4 columns list-icon-left show-for-medium">
+      <div class="row informative slide-right">
+        <div class="small-12 medium-4 columns list-icon show-for-medium">
           <img src="{{site.baseurl }}/images/{{product.list-3-icon}}"/>
         </div>
-        <div class="small-12 medium-8 columns info-text-left">
+        <div class="small-12 medium-8 columns">
           <h6>{{product.list-3-title}}</h6>
           <p>{{product.list-3-description}}</p>
         </div>
       </div>
 
     </div>
-    <div class="small-12 medium-6 columns gallery-wrapper">
+    <div class="small-12 medium-6 columns gallery-wrapper slide-left">
       <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
         <div class="gallery-cell">
           <img src="{{site.baseurl }}/images/{{product.img-1}}" alt="">

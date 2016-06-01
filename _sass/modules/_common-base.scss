@@ -110,3 +110,58 @@ p,ul,li {
       margin-right:auto;
   }
 }
+
+// Animations
+
+// Appear Delay animation
+.appear-delay > * {
+  opacity: 0;
+}
+
+// Visible animations
+
+.slideLeft {
+  animation: slideLeft 2s;
+}
+.slideRight {
+  animation: slideRight 3s;
+}
+.slideUp {
+  animation: slideUp 2s;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  75% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}

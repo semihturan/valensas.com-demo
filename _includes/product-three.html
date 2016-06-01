@@ -1,7 +1,7 @@
 <section class="product3-section">
   {% for product in site.data.ourproducts %}
     {% if forloop.index == 3 %}
-  <div class="row columns">
+  <div class="row slide-up">
     <div class="large-12 large-centered columns heading-content">
       <h1 class="section-title">{{product.title}}</h1>
       <h2>{{product.description}}</h2>
@@ -10,31 +10,31 @@
 
   <div class="row columns content-wrapper informative-wrapper">
     <div class="row columns informative">
-      <div class="small-12 medium-6 columns descriptive info-text-left">
+      <div class="small-12 medium-6 columns descriptive slide-right">
         <h3>{{product.list-1-title}}</h3>
         <p>{{product.list-1-description}}</p>
       </div>
-      <div class="small-12 medium-5 columns end list-icon-right">
+      <div class="small-12 medium-5 columns end list-icon slide-left">
         <a href="{{site.baseurl }}/images/{{product.img-3}}" rel="galleryy" class="galleryy"><img src="{{site.baseurl }}/images/{{product.img-1}}"/></a>
       </div>
     </div>
 
     <div class="row columns informative">
-      <div class="small-12 medium-6 columns descriptive info-text-left">
+      <div class="small-12 medium-6 columns descriptive slide-right">
         <h3>{{product.list-2-title}}</h3>
         <p>{{product.list-2-description}}</p>
       </div>
-      <div class="small-12 medium-5 columns end list-icon-right">
+      <div class="small-12 medium-5 columns end list-icon slide-left">
         <a href="{{site.baseurl }}/images/{{product.img-3}}" rel="galleryy" class="galleryy"><img  src="{{site.baseurl }}/images/{{product.img-2}}"/></a>
       </div>
     </div>
 
     <div class="row columns informative">
-      <div class="small-12 medium-6 columns descriptive info-text-left">
+      <div class="small-12 medium-6 columns descriptive slide-right">
         <h3>{{product.list-3-title}}</h3>
         <p>{{product.list-3-description}}</p>
       </div>
-      <div class="small-12 medium-5 columns end list-icon-right">
+      <div class="small-12 medium-5 columns end list-icon slide-left">
         <a href="{{site.baseurl }}/images/{{product.img-3}}" rel="galleryy" class="galleryy"><img  src="{{site.baseurl }}/images/{{product.img-3}}"/></a>
       </div>
     </div>

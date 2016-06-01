@@ -1,15 +1,14 @@
 .contact-section{
-  .map{
+  .map {
     height: 600px;
   }
-  .info{
+  .info {
     padding: 1em 0;
     h3 {
       padding: 1em 0 0 0;
       color: $footer-color;
     }
     .columns{
-      opacity: 0;
       > * {
         transition: all .9s ease;
       }

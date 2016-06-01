@@ -1,7 +1,7 @@
 <section class="product2-section">
   {% for product in site.data[page.data] %}
     {% if forloop.index == 2 %}
-  <div class="row">
+  <div class="row slide-up">
     <div class="large-12 large-centered columns heading-content">
       <h1 class="section-title">{{product.title}}</h1>
       <h2>{{product.description}}</h2>
@@ -10,13 +10,13 @@
 
   <div class="row content-wrapper">
 
-    <div class="small-12 medium-6 columns paragraph-wrapper info-text-left">
+    <div class="small-12 medium-6 columns paragraph-wrapper slide-right">
       <h3>{{product.subtitle}}</h1>
       <p>{{product.paragraph-1}}</p>
       <p>{{product.paragraph-2}}</p>
     </div>
 
-    <div class="small-12 medium-6 columns gallery-wrapper">
+    <div class="small-12 medium-6 columns gallery-wrapper slide-left">
       <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false}'>
         <div class="gallery-cell">
           <img src="{{site.baseurl }}/images/{{product.img-1}}" alt="">
@@ -32,17 +32,17 @@
 
     <div class="small-12 columns informative-wrapper">
 
-        <div class="small-12 medium-4 columns informative info-text-middle">
+        <div class="small-12 medium-4 columns informative slide-up">
           <h6>{{product.list-1-title}}</h6>
           <p>{{product.list-1-description}}</p>
         </div>
 
-        <div class="small-12 medium-4 columns informative info-text-middle">
+        <div class="small-12 medium-4 columns informative slide-up">
           <h6>{{product.list-2-title}}</h6>
           <p>{{product.list-3-description}}</p>
         </div>
 
-        <div class="small-12 medium-4 columns informative info-text-middle">
+        <div class="small-12 medium-4 columns informative slide-up">
           <h6>{{product.list-3-title}}</h6>
           <p>{{product.list-3-description}}</p>
         </div>
