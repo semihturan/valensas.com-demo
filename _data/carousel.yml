@@ -1,19 +1,29 @@
 - title: Yemeksepeti
   img: yemeksepeti-banner.png
-  background: yemeksepeti-banner-background.png
+  background: yemeksepeti-background.png
   description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus.
 
-- title: Tekfen
-  img: AppleTV.png
-  background: sample3.png
-  description: Donec ullamcorper nulla non metus auctor fringilla.
-
 - title: Veacon
-  img: AppleTV.png
-  background: sample3.jpg
+  img: veacon-banner.png
+  background: veacon-background.png
+  description: Withdraw money using your smartphone, thanks iBeacon technology and the Veacon platform.
+
+- title: Findeks
+  img: findeks-banner.png
+  background: veacon-background.png
   description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
 
-- title: Akbank
-  img: AppleTV.png
-  background: akbank.jpg
+- title: n11
+  img: n11-banner.png
+  background: n11-background.png
   description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.
+
+- title: Akbank
+  img: akbank-banner.png
+  background: veacon-background.png
+  description: Withdraw money using your smartphone, thanks iBeacon technology and the Veacon platform.
+
+- title: Akbank Apple TV
+  img: akbanktv-banner.png
+  background: veacon-background.png
+  description: First in the world The all new Albank TV Banking App is available on Apple TV.
