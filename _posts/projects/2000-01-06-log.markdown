@@ -1,7 +1,7 @@
 ---
 layout: project-detail-layout
 title:  Log
-subtitle: Lorem Ipsum is simply dummy of the printing
+subtitle: Your monthly tech magazine
 permalink: /projects/log.html
 thumbnail: project1.png
 images:
@@ -10,32 +10,12 @@ images:
   - img: iphone3.png
   - img: iphone3.png
   - img: iphone3.png
-project-year: February, 2014
+project-year: August, 2010
 project-types:
-  - type: iPhone
-  - type: Client Projects
+  - type: iPad
+  - type: References
 tags:
-  - tag: dogus
-  - tag: e-commerce
-  - tag: m-commerce
-  - tag: n11
-  - tag: online shopping
-  - tag: products
-  - tag: sk planet
+  - tag: log
 ---
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+LOG Magazine iPad application enables you to access expanded content and interactive applications in addition to the standard content of your magazine. The application emphasizes the latest in technology, breathtaking devices, game reviews and guiding files. By using the interactive areas on the pages of the LOG Magazine iPad application you can watch games and videos which are being promoted, watch videos of events, listen to demos of music albums, and have direct access to internet sites without closing the application simply by clicking on the links in the advertising areas. You can read your magazines on your iPad either vertically or horizontally and load all the archived magazine issues at no extra cost.

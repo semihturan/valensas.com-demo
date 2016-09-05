@@ -1,7 +1,7 @@
 ---
 layout: project-detail-layout
 title:  Akbank
-subtitle: Lorem Ipsum is simply dummy of the printing
+subtitle: Banking made easy
 permalink: /projects/Akbank.html
 thumbnail: project1.png
 images:
@@ -13,25 +13,11 @@ images:
 project-year: February, 2014
 project-types:
   - type: iPhone
+  - type: iPad
   - type: Client Projects
 tags:
-  - tag: dogus
-  - tag: e-commerce
-  - tag: m-commerce
-  - tag: n11
-  - tag: online shopping
-  - tag: products
-  - tag: sk planet
+  - tag: akbank
 ---
 
-Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
-
-Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
-
-The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.
-
-Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
-
-Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
-
-The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.
+Developed in a joint effort with Akbank and Valensas engineers Akbank Direkt is one of Turkey’s top mobile banking applications allowing all money transactions on the go. The completely renewed native banking application brings the latest of Apple’s iOS 7 performance and design making it much faster than its previous version. Save time finding the nearest branch/ATM quickly or check exchange rates without logging in.
+Akbank Direkt is available for both iPhone and iPad.

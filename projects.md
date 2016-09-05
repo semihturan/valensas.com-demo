@@ -5,7 +5,7 @@ data: project
 permalink: /projects/index.html
 banner-type: noimg
 banner-title: Our Projects
-banner-title-color: green
+banner-title-color: gold
 banner-description: We’ve created the product that will help your startup to look even better. We’ve created the product that will help your startup to look even better.
 banner-description-color: '#DDAA55'
 banner-background: sample2.jpg

@@ -1,29 +1,29 @@
 - title: Yemeksepeti
   img: yemeksepeti-banner.png
   background: yemeksepeti-background.png
-  description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus.
+  description: Your favorite dish is a few clicks away!
 
 - title: Veacon
   img: veacon-banner.png
   background: veacon-background.png
-  description: Withdraw money using your smartphone, thanks iBeacon technology and the Veacon platform.
+  description: Small device, big possibilities.
 
-- title: Findeks
+- title: Tekfen IK
   img: findeks-banner.png
   background: veacon-background.png
-  description: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-- title: n11
-  img: n11-banner.png
-  background: n11-background.png
-  description: Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.
-
-- title: Akbank
-  img: akbank-banner.png
-  background: veacon-background.png
-  description: Withdraw money using your smartphone, thanks iBeacon technology and the Veacon platform.
+  description:  Follow Tekfen's news and events, apply for jobs and more...
 
 - title: Akbank Apple TV
+  img: n11-banner.png
+  background: n11-background.png
+  description: Your favorite banking application is on Apple TV now.
+
+- title: Arter
+  img: akbank-banner.png
+  background: veacon-background.png
+  description: Be ready for an outstanding interactive museum experience.
+
+- title: Akbank Direkt
   img: akbanktv-banner.png
   background: veacon-background.png
-  description: First in the world The all new Albank TV Banking App is available on Apple TV.
+  description: Withdraw cash easily with Veacon and Akbank Direkt mobile app.
