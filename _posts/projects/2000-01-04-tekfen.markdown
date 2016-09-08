@@ -1,7 +1,7 @@
 ---
 layout: project-detail-layout
 title:  Tekfen
-subtitle: Lorem Ipsum is simply dummy of the printing
+subtitle: Tekfen Human Resources Mobile App
 permalink: /projects/tekfen.html
 thumbnail: project1.png
 images:
