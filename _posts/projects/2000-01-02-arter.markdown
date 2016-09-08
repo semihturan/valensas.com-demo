@@ -1,41 +1,26 @@
 ---
 layout: project-detail-layout
 title:  Arter
-subtitle: Lorem Ipsum is simply dummy of the printing
+subtitle: Arter - Art experience volume 2
 permalink: /projects/Arter.html
 thumbnail: project1.png
 images:
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-project-year: February, 2014
+  - img: arter-1.png
+  - img: arter-2.png
+  - img: arter-3.png
+  - img: arter-4.png
+project-year: January, 2015
 project-types:
   - type: iPhone
+  - type: iPad
   - type: Client Projects
 tags:
-  - tag: dogus
-  - tag: e-commerce
-  - tag: m-commerce
-  - tag: n11
-  - tag: online shopping
-  - tag: products
-  - tag: sk planet
+  - tag: arter
 ---
+An initiative of the Vehbi Koç Foundation (VKF), Arter opened in 2010 to offer a sustainable infrastructure for producing and exhibiting contemporary art. Situated on Istiklal Street, Istanbul’s main artery for culture and arts, Arter has been presenting solo and group exhibitions by artists from Turkey and abroad. Arter’s programme also features publications that accompany each exhibition.
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
+<b>What can I do with the Arter iOS app?</b>
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+Explore Arter’s exhibitions; find your way around the exhibition space using iBeacon technology; access additional visual and textual content about the works; and listen to, or watch the stories behind their production in the artists’ own words. View past exhibitions; keep track of events such as artists’ talks, performances, and exhibition tours; and find out more about Arter’s publications.
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+<a href="https://itunes.apple.com/us/app/arter/id949851816?mt=8" target="_blank">Visit App Store to download Arter</a>

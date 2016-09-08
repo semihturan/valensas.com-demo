@@ -1,15 +1,14 @@
 ---
 layout: project-detail-layout
 title:  Log
-subtitle: Your monthly tech magazine
+subtitle: Log - Your monthly tech magazine
 permalink: /projects/log.html
 thumbnail: project1.png
 images:
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
+  - img: log-1.png
+  - img: log-2.png
+  - img: log-3.png
+  - img: log-4.png
 project-year: August, 2010
 project-types:
   - type: iPad

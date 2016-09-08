@@ -1,27 +1,20 @@
 ---
 layout: project-detail-layout
 title:  Veacon
-subtitle: Lorem Ipsum is simply dummy of the printing
+subtitle: Veacon - Mobile is getting much smarter
 permalink: /projects/Veacon.html
 thumbnail: project1.png
 images:
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-  - img: iphone3.png
-project-year: February, 2014
+  - img: veacon-1.png
+  - img: veacon-2.png
+  - img: veacon-3.png
+  - img: veacon-4.png
+project-year: August, 2014
 project-types:
   - type: iPhone
   - type: Client Projects
 tags:
-  - tag: dogus
-  - tag: e-commerce
-  - tag: m-commerce
-  - tag: n11
-  - tag: online shopping
-  - tag: products
-  - tag: sk planet
+  - tag: veacon
 ---
 
 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.

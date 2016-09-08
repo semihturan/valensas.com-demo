@@ -9,8 +9,20 @@
   .images {
     text-align: center;
     img {
-      height: 440px;
-      padding: 0.5em 0;
+      max-height: 440px;
+      padding: 0.5em 1.5em;
+    }
+    .hide-for-medium{
+      .gallery-cell {
+        height: 300px;
+      }
+      img {
+        max-height: 300px;
+        position: absolute;
+        left: 50;
+        top: 50%;
+        transform:translate(-50%,-50%);
+      }
     }
   }
 

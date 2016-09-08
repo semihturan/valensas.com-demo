@@ -1,16 +1,16 @@
 # First Product
 - title: Valensas Veacon
   description: As a development house, and Apple enthusiasts, we feel obligated to bring the latest in technology to our clients. Since Apple’s first use of the term iBeacon we have been working on developing a platform that brands could use to easily implement the new iBeacon micro location technology. Veacon, short for Valensas iBeacon, was born out of the idea to create more engagement for the mobile user by enabling location specific services. These services can vary from offering a discount at your local coffee shop to giving location specific information to visitors at a museum. Veacon consist of three main elements which are sensors, SDK and portal.
-  list-1-icon: sample-icon.png
+  list-1-icon: veacon-sensor.png
   list-1-title: Sensors
   list-1-description: Sensors are available for purchase and any Bluetooth 4.0 enabled iOS device is able to broadcast as a sensor with our Veacon app.
-  list-2-icon: sample-icon.png
+  list-2-icon: veacon-sdk.png
   list-2-title: SDK
   list-2-description: We encourage every mobile developer to innovate with iBeacon technology, so we published the Veacon Mobile SDK, freely available for all developers here.
-  list-3-icon: sample-icon.png
+  list-3-icon: veacon-portal.png
   list-3-title: Portal
   list-3-description: The Portal and final part of the platform is a management dashboard used to maintain devices, track behavior and create custom scenarios for each location hosting a sensor.
-  img-1: iphone2.png
+  img-1: veacon-iphone1.png
   img-2: iphone2.png
   img-3: iphone2.png
 
@@ -20,9 +20,9 @@
   subtitle: Publish your content globally!
   paragraph-1: Designing and adding content has never been easier for companies looking to develop their own iPad magazine. After downloading the VDP Manager and VDP Viewer programs on to your computer and iPad, magazine pages can be added or deleted, rotated horizontally or vertically, and interactive content can be included through the management interface. VDP Viewer is used to edit, preview and test the completed iPad magazine before being sent to the App Store.
   paragraph-2: You can publish your magazine using your own App Store certificate which enables the magazine to be downloaded under your name via the iTunes App Store.
-  img-1: ipad.png
-  img-2: ipad.png
-  img-3: ipad.png
+  img-1: vdp-1.png
+  img-2: vdp-2.png
+  img-3: vdp-3.png
   list-1-title: Enriched Content
   list-1-description: VDP supports embedded images, sounds, videos and HTML5 for animations.
   list-2-title: Gestures
