@@ -1,0 +1,19 @@
+---
+layout: project-detail-layout
+title:  Pişti
+subtitle: Pişti
+permalink: /projects/pisti.html
+thumbnail: project1.png
+images:
+  - img: pisti-1.png
+  - img: pisti-2.png
+  - img: pisti-3.png
+project-year: January, 2010
+project-types:
+  - type: iPhone
+  - type: Internal
+tags:
+  - tag: pisti
+---
+
+Sometimes we need a little fun distraction in life to get our mind off of things. PISTI is a neat card game that can be played either online with multiple players or offline against the iPhone. Included is a Voice Chat feature with other players -can be turned on or off during game- and the capability of viewing the players’ location and identifies if they are using an iPhone or iPad. With the Game Center integration it’s more fun by inviting friends for a little competition..

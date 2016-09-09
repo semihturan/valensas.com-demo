@@ -1,7 +1,7 @@
 ---
 layout: project-detail-layout
-title:  Turkish Airlines
-subtitle: Lorem Ipsum is simply dummy of the printing
+title:  Turkish Airlines - Skylife
+subtitle: Skylife - Magazine above clouds
 permalink: /projects/turkish-airlines.html
 thumbnail: project1.png
 images:
@@ -15,23 +15,11 @@ project-types:
   - type: iPhone
   - type: Client Projects
 tags:
-  - tag: dogus
-  - tag: e-commerce
-  - tag: m-commerce
-  - tag: n11
-  - tag: online shopping
-  - tag: products
-  - tag: sk planet
+  - tag: thy
 ---
 
-Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
+Skylife, Turkish Airlines’ in-flight magazine, has added value and color to the journeys of people traveling to various locations in Turkey and worldwide for more than twenty-seven years.
 
-Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
+Based on a foundation of travel, culture, and arts, Skylife also covers a wide range of other subjects, from technology to arts and from hobbies to lifestyle and health, all inseparable parts of the magazine’s unique, value-added content.
 
-The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.
-
-Since its successful debut less than a year ago n11.com has been investing a great deal in e-commerce technologies. As part of that vision we’re proud to announce the new n11.com iPhone App which allows mobile users browse, compare, and shop among millions of items on the go.
-
-Launched less than a year ago n11.com is one of Turkey’s biggest shopping portals. Dogus Planet, the joint venture by South Korea’s SK Planet and Turkey’s Dogus Group, has some 2 million products currently available for sale online.
-
-The e-commerce venture serves numerous categories including Fashion & Cosmetics, Electronics, Home & Living, Sports & Outdoors, Automotive & Accessories, Culture & Game and Travel, with plans for further expansion of product line and merchants.
+With the September 2009 issue, you were presented with a Skylife brand new in terms of content and design. Now, with the Skylife iPad app, you will be able to access not only all existing content in the magazine, but also expanded, exclusive content and interactive applications, demo tracks of musicians and albums, videos, image galleries, and various animations.

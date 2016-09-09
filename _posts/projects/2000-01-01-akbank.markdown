@@ -1,6 +1,6 @@
 ---
 layout: project-detail-layout
-title:  Akbank
+title:  Akbank Direkt
 subtitle: Banking made easy
 permalink: /projects/Akbank.html
 thumbnail: project1.png

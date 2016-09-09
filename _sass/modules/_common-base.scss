@@ -58,11 +58,14 @@ li {
 a {
     color: $blue-color;
     text-decoration: none;
+    &:link {
+        color: lighten($blue-color, 30%);
+    }
     &:visited {
-        color: darken($blue-color, 15%);
+        color: lighten($blue-color, 20%);
     }
     &:hover {
-        color: $grey-color-dark;
+        color: darken($blue-color, 10%);
         text-decoration: none;
     }
 }

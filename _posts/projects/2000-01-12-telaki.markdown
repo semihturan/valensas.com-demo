@@ -1,0 +1,21 @@
+---
+layout: project-detail-layout
+title:  Telaki
+subtitle: Telaki
+permalink: /projects/telaki.html
+thumbnail: project1.png
+images:
+  - img: telaki-1.png
+  - img: telaki-2.png
+  - img: telaki-3.png
+  - img: telaki-4.png
+  - img: telaki-5.png
+project-year: Coming Soon
+project-types:
+  - type: iPhone
+  - type: Internal
+tags:
+  - tag: telaki
+---
+
+Managing routers have never been easier. Coming this fall.

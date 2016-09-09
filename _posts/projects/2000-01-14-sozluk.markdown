@@ -1,0 +1,20 @@
+---
+layout: project-detail-layout
+title:  Sözlük
+subtitle: Sözlük
+permalink: /projects/sozluk.html
+thumbnail: project1.png
+images:
+  - img: sozluk-1.png
+  - img: sozluk-2.png
+  - img: sozluk-3.png
+project-year: January, 2010
+project-types:
+  - type: iPhone
+  - type: iPad
+  - type: Internal
+tags:
+  - tag: sözlük
+---
+
+Rolled out in 2010, Sözlük has been one of the best offline Turkish-English dictionary application in App Store.

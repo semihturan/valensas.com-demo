@@ -1,6 +1,6 @@
 # First Product
 - title: Valensas Veacon
-  description: As a development house, and Apple enthusiasts, we feel obligated to bring the latest in technology to our clients. Since Apple’s first use of the term iBeacon we have been working on developing a platform that brands could use to easily implement the new iBeacon micro location technology. Veacon, short for Valensas iBeacon, was born out of the idea to create more engagement for the mobile user by enabling location specific services. These services can vary from offering a discount at your local coffee shop to giving location specific information to visitors at a museum. Veacon consist of three main elements which are sensors, SDK and portal.
+  description: Veacon was born out of the idea to create more engagement for the mobile user by enabling location specific services. Veacon consist of three main elements which are sensors, SDK and portal.
   list-1-icon: veacon-sensor.png
   list-1-title: Sensors
   list-1-description: Sensors are available for purchase and any Bluetooth 4.0 enabled iOS device is able to broadcast as a sensor with our Veacon app.

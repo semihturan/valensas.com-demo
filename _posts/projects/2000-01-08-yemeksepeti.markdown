@@ -2,7 +2,7 @@
 layout: project-detail-layout
 title:  Yemeksepeti
 subtitle: ORDER FOOD IN NO TIME
-permalink: /projects/yemeksepeti.html
+permalink: /projects/Yemeksepeti.html
 thumbnail: project1.png
 images:
   - img: yemeksepeti-1.png
