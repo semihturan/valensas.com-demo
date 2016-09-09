@@ -32,13 +32,13 @@
 
 # Third Product
 - title: Valensas Workbuk
-  description: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus.
-  list-1-title: Workbuk Title 1
-  list-1-description: Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-  list-2-title: Workbuk Title 2
-  list-2-description: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
-  list-3-title: Workbuk Title 3
-  list-3-description: Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-  img-1: ipad.png
-  img-2: ipad.png
-  img-3: ipad.png
+  description: Publish your portfolios all over the world.
+  list-1-title: Astonishing Quality
+  list-1-description: No megabyte limitations! Upload high quality images and make the app do the rest.
+  list-2-title: Filter
+  list-2-description: Filter among various keywords suits your needs.
+  list-3-title: Favorites
+  list-3-description: Gather your favorite portfolios under Favorites for easy access.
+  img-1: workbuk-1.png
+  img-2: workbuk-2.png
+  img-3: workbuk-3.png
