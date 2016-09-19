@@ -16,10 +16,10 @@
 
 # Second Product
 - title: Valensas VDP
-  description: Create, customize and publish
+  description: Create, customize and publish. Available for iOS and Android.
   subtitle: Publish your content globally!
   paragraph-1: Designing and adding content has never been easier for companies looking to develop their own iPad magazine. After downloading the VDP Manager and VDP Viewer programs on to your computer and iPad, magazine pages can be added or deleted, rotated horizontally or vertically, and interactive content can be included through the management interface. VDP Viewer is used to edit, preview and test the completed iPad magazine before being sent to the App Store.
-  paragraph-2: You can publish your magazine using your own App Store certificate which enables the magazine to be downloaded under your name via the iTunes App Store.
+  paragraph-2: You can publish your magazine using your own certificates which enables the magazine to be downloaded under your name via the iTunes App Store or Google Play Store.
   img-1: vdp-1.png
   img-2: vdp-2.png
   img-3: vdp-3.png
@@ -34,11 +34,11 @@
 - title: Valensas Workbuk
   description: Publish your portfolios all over the world.
   list-1-title: Astonishing Quality
-  list-1-description: No megabyte limitations! Upload high quality images and make the app do the rest.
+  list-1-description: Every pixel is significant when it comes to photography. Therefore, there are no upload limitation in Workbuk! Upload best high quality images and make the app do the rest.
   list-2-title: Filter
-  list-2-description: Filter among various keywords suits your needs.
+  list-2-description: Filter among various keywords suits your needs. You can select multiple filters at once.
   list-3-title: Favorites
-  list-3-description: Gather your favorite portfolios under Favorites for easy access.
+  list-3-description: Liked a portfolio too much? Gather your favorite portfolios under Favorites for easy access.
   img-1: workbuk-1.png
   img-2: workbuk-2.png
   img-3: workbuk-3.png
