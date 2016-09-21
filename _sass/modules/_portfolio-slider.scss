@@ -1,9 +1,9 @@
 .portfolio-section .row {
-    height:240px;
+    height:200px;
 }
 
 .portfolio-slider  {
-  height:240px;
+  max-height:200px;
   width: 100%;
   // overflow: hidden;
   ul {
@@ -13,7 +13,9 @@
     list-style: none;
     float: left;
     img {
-      width: 200px;
+      padding: 1em 2em;
+      max-height: 180px;
+      max-width:240px;
     }
   }
 }

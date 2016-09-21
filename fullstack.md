@@ -1,9 +1,9 @@
 ---
-service: Reserved
+service: Full Stack Development
 layout: services-layout
-permalink: /reserved.html
+permalink: /fullstack.html
 banner-type: noimg
-banner-title: RESERVED
+banner-title: Full Stack Development
 banner-title-color: red
 banner-description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 banner-description-color: '#22FF66'

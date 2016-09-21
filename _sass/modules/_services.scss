@@ -1,0 +1,33 @@
+.services-section {
+  padding: 2em 0;
+  content-align: center;
+  overflow: hidden;
+}
+.services .photo {
+  margin-bottom:0;
+  text-align: center;
+}
+.services .info {
+  text-align: center;
+  padding: 1.5em 0 2em 0;
+  margin: 0 1.5em;
+}
+.services .info .titlebox {
+  height: 4em;
+  display: flex;
+  // justify-content: flex-end;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  // background-color: violet;
+}
+.services .read-more {
+  vertical-align: bottom;
+  a {
+    font-size: $small-font-size;
+    color:$blue-color;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}

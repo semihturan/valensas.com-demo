@@ -1,14 +1,14 @@
 - title: Mobile App Development
   permalink: mobile.html
   img: mobile-dev.png
-  description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+  description: We develop beautiful native iOS & Android apps for ourselves, corporates and end-users. Of course, with latest syntax and tech.
 
-- title: [RESERVED]
-  permalink: reserved.html
+- title: Full Stack Development
+  permalink: fullstack.html
   img: reserved.png
-  description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+  description:  Your mobile app needs extensive backend capabilities? No problem, we are also good at developing backend services.
 
 - title: Consulting
   permalink: consulting.html
   img: consulting.png
-  description: Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+  description: You want to develop a mobile app but you don't know where to start or what steps to take? We are here for help!
