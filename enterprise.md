@@ -1,6 +1,7 @@
 ---
 layout: enterprise-layout
 title: Enterprise Solutions
+weight: 3
 data: enterprise
 permalink: /enterprise/index.html
 banner-type: noimg

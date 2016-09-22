@@ -1,9 +1,6 @@
 .banner-section{
   width: 100%;
-  height: 550px;
-  .content-with-no-img {
-    min-height: 440px;
-  }
+  height: 440px;
   .content {
     text-align: left;
     padding-top:4em;
@@ -42,14 +39,12 @@
     text-align: right;
     }
   }
-  @include media-query($on-palm) {
-    padding-top:0em;
-    height: 320px;
-    .no-img {
-      max-height: 320px;
-    }
+  .banner-image {
+    transform: translateY(-5%);
+  }
+  @include media-query($on-tablet) {
+    height: 42vw;
     h1 {
-      padding-top:2em;
       font-size: $xlarge-font-size;
     }
     h2 {
@@ -58,35 +53,32 @@
     h3 {;
       font-size: $base-font-size;
     }
+  }
+  @include media-query($on-palm) {
+    h1 {
+      padding-top:2em;
+    }
+    padding-top:0em;
+    height: auto;
+    max-height: 240px;
     .content {
       padding-top:0em;
       // display:flex;
-      flex-flow:wrap;
-      display: inline-flex;
     }
     .content-left, .content-right, .content-centered {
-      h1,h2 {
+      padding-top:2em;
+      h1,h2,h3{
       text-align: center;
-      padding-top:0em;
+      padding-top:0.2em;
       padding-bottom:0em;
       }
-    }
-    .content-right {
-      order:1;
-    }
-    .left-image {
-      order: 2;
-    }
-    .push-right {
-      order: 3;
-      padding-bottom: 20em;
     }
   }
 }
 
 .section-with-no-img {
   overflow: hidden;
-  height: 450px;
+  height: 440px;
   .content-with-no-img {
     max-height: 400px;
   }
@@ -95,11 +87,6 @@
     padding-top:4em;
   }
   @include media-query($on-palm) {
-    padding-top:2em;
-    height: 280px;
-    .content-with-no-img {
-      max-height: 240px;
-    }
     .content {
       text-align: left;
       padding-top:0;

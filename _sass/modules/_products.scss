@@ -1,20 +1,32 @@
 .product1-section {
-  padding: 0 2em 3em 2em;
-
-  .list-icon {
-    text-align: center;
+  padding: 0 2em;
+  .content-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
-
   .informative-wrapper {
-    padding: 2em 0 2em 0;
+    padding: 1em 0 2em 0;
   }
-
   .informative {
     text-align: right;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
   }
-
+  .list-icon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-description {
+    display: inline-block;
+    vertical-align: middle;
+  }
   .gallery-cell {
-    height: 550px;
+    height: 440px;
   }
 
   .gallery-wrapper {
@@ -24,8 +36,14 @@
     }
   }
 
+  @include media-query($on-tablet) {
+    .informative {
+      height: auto;
+    }
+  }
+
   @include media-query($on-palm) {
-      padding-top: 4em;
+    padding: 2em 0;
     .content-wrapper {
       display:flex;
       flex-flow: column;
