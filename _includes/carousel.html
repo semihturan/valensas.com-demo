@@ -3,14 +3,14 @@
   <div class="gallery js-flickity animated" data-flickity-options='{ "cellAlign": "left", "contain": true, "selectedAttraction": 0.2, "friction": 0.9, "prevNextButtons": false, "wrapAround":true, "autoPlay": 5000, "pauseAutoPlayOnHover": false}'>
     {% for product in site.data.carousel %}
     <!-- href='{{site.baseurl }}/projects/{{product.title}}.html' -->
-    <div class="gallery-cell expanded row" style='background: url("{{site.baseurl }}/images/{{ product.background }}") no-repeat;background-size: cover;background-position: bottom;'>
+    <div class="gallery-cell expanded row" style='background: url("{{site.baseurl }}/images/carousel/{{ product.background }}") no-repeat;background-size: cover;background-position: bottom;'>
       <a href="{{site.baseurl }}/projects/{{product.title}}.html"></a>
       <div class="carousel-content">
         <div class="small-12 columns rainbow-text">
             <h3>{{product.description}}</h3>
         </div>
         <div class="small-12 columns imgdiv">
-          <img src="{{site.baseurl }}/images/{{ product.img }}" alt="{{ product.title }}">
+          <img src="{{site.baseurl }}/images/carousel/{{ product.img }}" alt="{{ product.title }}">
         </div>
       </div>
     </div>

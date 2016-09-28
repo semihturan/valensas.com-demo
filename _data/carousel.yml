@@ -9,9 +9,14 @@
   description: Small device, big possibilities.
 
 - title: Tekfen
-  img: findeks-banner.png
-  background: veacon-background.png
+  img: tekfen-banner.png
+  background: tekfen-background.png
   description:  Follow Tekfen's news and events, apply for jobs and more...
+
+- title: Findeks
+  img: findeks-banner.png
+  background: findeks-background.png
+  description:  Get your credit report and check your financials immediately.
 
 - title: Akbank Apple TV
   img: n11-banner.png
