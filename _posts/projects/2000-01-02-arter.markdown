@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Arter
 subtitle: Arter - Art experience volume 2
 permalink: /projects/Arter.html
-thumbnail: project1.png
+thumbnail: project_arter.jpg
 images:
   - img: arter-1.png
   - img: arter-2.png

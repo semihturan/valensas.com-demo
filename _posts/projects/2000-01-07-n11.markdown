@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  n11
 subtitle: E-COMMERCE REINVENTED
 permalink: /projects/n11.html
-thumbnail: project1.png
+thumbnail: project_n11.jpg
 images:
   - img: iphone3.png
   - img: iphone3.png

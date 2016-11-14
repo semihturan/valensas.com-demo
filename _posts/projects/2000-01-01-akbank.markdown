@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Akbank Direkt
 subtitle: Banking made easy
 permalink: /projects/Akbank.html
-thumbnail: project1.png
+thumbnail: project_akbank.jpg
 images:
   - img: iphone3.png
   - img: iphone3.png

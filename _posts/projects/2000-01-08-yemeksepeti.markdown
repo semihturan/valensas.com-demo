@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Yemeksepeti
 subtitle: ORDER FOOD IN NO TIME
 permalink: /projects/Yemeksepeti.html
-thumbnail: project1.png
+thumbnail: project_ys.jpg
 images:
   - img: yemeksepeti-1.png
   - img: yemeksepeti-2.png

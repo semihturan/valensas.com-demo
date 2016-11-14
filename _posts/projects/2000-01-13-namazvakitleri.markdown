@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Namaz Vakitleri
 subtitle: Namaz Vakitleri
 permalink: /projects/namazvakitleri.html
-thumbnail: project1.png
+thumbnail: project_namaz.jpg
 images:
   - img: namazvakitleri-1.png
   - img: namazvakitleri-2.png

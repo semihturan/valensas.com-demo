@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Turkish Airlines - Skylife
 subtitle: Skylife - Magazine above clouds
 permalink: /projects/turkish-airlines.html
-thumbnail: project1.png
+thumbnail: project_skylife.jpg
 images:
   - img: iphone3.png
   - img: iphone3.png

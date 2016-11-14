@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Koray Birand
 subtitle: Koray Birand
 permalink: /projects/koraybirand.html
-thumbnail: project1.png
+thumbnail: project_koraybirand.jpg
 images:
   - img: koraybirand-1.png
   - img: koraybirand-2.png

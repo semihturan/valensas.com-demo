@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Roche Symphony
 subtitle: Roche Symphony
 permalink: /projects/rochesymphony.html
-thumbnail: project1.png
+thumbnail: project_roche.jpg
 images:
   - img: rochesymphony-1.png
   - img: rochesymphony-2.png

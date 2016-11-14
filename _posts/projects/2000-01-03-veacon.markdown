@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Veacon
 subtitle: Veacon - Mobile is getting much smarter
 permalink: /projects/Veacon.html
-thumbnail: project1.png
+thumbnail: project_veacon.jpg
 images:
   - img: veacon-1.png
   - img: veacon-2.png

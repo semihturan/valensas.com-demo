@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Log
 subtitle: Log - Your monthly tech magazine
 permalink: /projects/log.html
-thumbnail: project1.png
+thumbnail: project_log.jpg
 images:
   - img: log-1.png
   - img: log-2.png

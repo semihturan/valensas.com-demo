@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Telaki
 subtitle: Telaki
 permalink: /projects/telaki.html
-thumbnail: project1.png
+thumbnail: project_telaki.jpg
 images:
   - img: telaki-1.png
   - img: telaki-2.png

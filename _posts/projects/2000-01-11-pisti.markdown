@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Pişti
 subtitle: Pişti
 permalink: /projects/pisti.html
-thumbnail: project1.png
+thumbnail: project_pisti.jpg
 images:
   - img: pisti-1.png
   - img: pisti-2.png

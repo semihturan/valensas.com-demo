@@ -86,7 +86,14 @@
     text-align: left;
     padding-top:4em;
   }
+  @include media-query($on-tablet) {
+    height: 42vw;
+  }
   @include media-query($on-palm) {
+    height: auto;
+    .content-with-no-img {
+      max-height: auto;
+    }
     .content {
       text-align: left;
       padding-top:0;

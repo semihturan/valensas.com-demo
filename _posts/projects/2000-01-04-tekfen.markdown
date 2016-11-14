@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Tekfen
 subtitle: Tekfen Human Resources Mobile App
 permalink: /projects/Tekfen.html
-thumbnail: project1.png
+thumbnail: project_tekfen.jpg
 images:
   - img: tekfen-1.png
   - img: tekfen-2.png

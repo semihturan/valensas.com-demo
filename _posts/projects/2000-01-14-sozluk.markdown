@@ -3,7 +3,7 @@ layout: project-detail-layout
 title:  Sözlük
 subtitle: Sözlük
 permalink: /projects/sozluk.html
-thumbnail: project1.png
+thumbnail: project_sozluk.jpg
 images:
   - img: sozluk-1.png
   - img: sozluk-2.png
