@@ -1,8 +1,8 @@
 <section class="fullpage">  </section>
 {% if page.banner-type == "noimg" %}
-<section class="banner-section section-with-no-img" style = 'background: url("{{site.baseurl }}/images/{{ page.banner-background }}") no-repeat; background-size: cover; background-position: bottom;'>
+<section class="banner-section section-with-no-img" style = 'background: url("{{site.baseurl }}/images/{{ page.banner-background }}") no-repeat; background-size: cover; background-position: top;'>
 {% else %}
-<section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ page.banner-background }}") no-repeat; background-size: cover; background-position: bottom;'>
+<section class="banner-section" style = 'background: url("{{site.baseurl }}/images/{{ page.banner-background }}") no-repeat; background-size: cover; background-position: top;'>
 {% endif %}
   <div class="row content animateUp">
     {% if page.banner-type == "left" %}

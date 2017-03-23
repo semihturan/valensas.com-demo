@@ -6,6 +6,7 @@
   }
   h2 {
     color:$grey-color;
+    font-size: $large-font-size;
   }
 
   @include media-query($on-palm) {

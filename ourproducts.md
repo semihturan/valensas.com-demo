@@ -5,12 +5,10 @@ weight: 2
 data: ourproducts
 permalink: /ourproducts/index.html
 banner-type: right
-banner-title: IN-HOUSE
-banner-title-color: blue
-banner-subtitle: Development is in our core.
-banner-subtitle-color: SlateGray
-banner-description: Our B2C products reach thousands of users every year.
-banner-description-color: Gainsboro
+banner-title: Development is in our core.
+banner-title-color: white
+banner-subtitle: Valensas products reach thousands of users every year.
+banner-subtitle-color: white
 banner-img: ourproducts.png
-banner-background: ourproducts-background.png
+banner-background: ourproducts-background.jpg
 ---

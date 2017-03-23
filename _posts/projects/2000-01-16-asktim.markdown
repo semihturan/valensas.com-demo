@@ -1,0 +1,21 @@
+---
+layout: project-detail-layout
+title:  AskTim
+subtitle: AskTim
+permalink: /projects/asktim.html
+thumbnail: project_sozluk.jpg
+images:
+  - img: asktim-1.png
+  - img: asktim-2.png
+  - img: asktim-3.png
+project-year: November, 2016
+project-types:
+  - type: iPhone
+  - type: iPad
+  - type: Android
+  - type: Web
+tags:
+  - tag: asktim bot vbot slack
+---
+
+AskTim is a project supported and enhanced by Valensas developers. AskTim integrates Analytic Tools to give a better understanding about trends regarding a product, website or an application. If you do not want to get lost in different analytic tool dashboards you can just Ask Tim! AskTim  can retrieve statistical information from multiple analytic tools at once and represent it visually with graphs and charts using Slack! AskTim is compatible with Google Analytics, Mixpanel and Adobe Analytics and it's ready to catch every trend.

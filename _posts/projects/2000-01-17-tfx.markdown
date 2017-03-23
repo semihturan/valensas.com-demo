@@ -1,0 +1,23 @@
+---
+layout: project-detail-layout
+title:  TFX Target
+subtitle: TFX Target
+permalink: /projects/tfx.html
+thumbnail: project_sozluk.jpg
+images:
+  - img: tfx-1.png
+  - img: tfx-2.png
+  - img: tfx-3.png
+project-year: Coming Soon
+project-types:
+  - type: iPhone
+  - type: iPad
+  - type: Android
+  - type: Web
+tags:
+  - tag:  türkiye finans banking finance trade
+---
+
+TFX Target is an Enhanced Trading Platform specially designed for Türkiye Finans Customers. TFX Target allows customers to observe or trade stocks anywhere without delay by using their personal computers and mobile devices. TFX Target possesses unique features which allow the users to give logic commands including limit, stop and OCO orders. These orders are carried out or cancelled in case a certain price limit is reached giving the cutting edge to the Türkiye Finans Customers.
+
+With TFX Target, you will never miss the profit!

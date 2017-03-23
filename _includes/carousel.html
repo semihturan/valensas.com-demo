@@ -9,9 +9,11 @@
         <div class="small-12 columns rainbow-text">
             <h3>{{product.description}}</h3>
         </div>
+        {% if product.img %}
         <div class="small-12 columns imgdiv">
           <img src="{{site.baseurl }}/images/carousel/{{ product.img }}" alt="{{ product.title }}">
         </div>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
